@@ -1,41 +1,180 @@
-<!DOCTYPE HTML>
-<!--
-	Spatial by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<title>Horokos Malum</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/hero-horokos.css" />
-	</head>
-	<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  background-color: white;
+}
 
-		<!-- Header -->
-			<header id="header">
-				<h1><strong><a href="characters.html">Back</a></strong></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="news.html">News</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="archives.html">Archives</a></li>
-						<li><a href="characters.html">Characters</a></li>
-						<li><a href="contributors.html">Contributors</a></li>
-						<li><a href="about.html">About</a></li>
-					</ul>
-				</nav>
-			</header>
+* {
+  box-sizing: border-box;
+}
 
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+.row > .column {
+  padding: 10px 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #ebe8e8;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 100px;
+  right: 120px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(166, 166, 166);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: 0px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+<head>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<title>Horokos Malum</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/hero-horokos.css" />
+</head>
+
+<body>
+	<!-- Header -->
+		<header id="header">
+			<h1><strong><a href="characters.html">Back</a></strong></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="archives.html">Archives</a></li>
+					<li><a href="characters.html">Characters</a></li>
+					<li><a href="contributors.html">Contributors</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			
-			<!-- Banner -->
+		<!-- Banner -->
 			<section id="banner">
 				<h2>HOROKOS MALUM</h2>
-				<p>- MEMBER OF PAA AND CO-FOUNDER-</p>
+				<p>- MEMBER OF PAA AND CO-FOUNDER -</p>
 				<p> created by George Ive and ComicTyrant, drawn by Adel and De-Mon49 </p>
 			</section>
 
@@ -85,25 +224,100 @@
 							</div>
 					<p><H5><font color="white">ddddddddddddddddddddddddd</font></H5></p>
 					<p><H4><font color="black">Story:</font></H4></p>
-						<p style="text-align:justify">
-							A scholar who went too far with learning black magic. 
-						</p>
+					<p style="text-align:justify">A scholar who went too far with learning black magic.</p>
 					<p><H5><font color="white">ddddddddddddddddddddddddd</font></H5></p>
 					<p><H4><font color="black">Images</font></H4></p>
-					<p><H5><i>To see the full size of the image, just click on it.</i></H5></p>
-					<div class="row 150%">
-							<img src="images/horokos-1.png" style="height: 20%; width: 20%" onclick="window.open('images/horokos-1.png');" />
-							<img src="images/horokos-2.jpg" style="height: 20%; width: 20%" onclick="window.open('images/horokos-2.jpg');" />
-							<img src="images/horokos-malum.png" style="height: 20%; width: 20%" onclick="window.open('images/horokos-malum.png');" />
-							<img src="images/H&P-group.jpg" style="height: 20%; width: 20%" onclick="window.open('images/H&P-group.jpg');" />
-					</div>
+					<p><H5><i>Click on the image to enter the gallery view [4 images]</i></H5></p>
 							
+						<!-- Image used to open the lightbox -->
+							<div class="row">
+								<div class="column">
+									<CENTER><img src="images/horokos-g.png" style="height: 90%; width: 90%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></CENTER>
+								</div>
+							</div>	
+			
+							<!-- The Modal/ Lightbox -->
+								<div id="myModal" class="modal">
+									<span class="close cursor" onclick="closeModal()">&times;</span>
+									<div class="modal-content">
+
+										<div class="mySlides">
+											<div class="numbertext">1 / 4</div>
+											<CENTER><img src="images/horokos-1.png" style="height:60%; width:60%"></CENTER>
+										</div>
+
+										<div class="mySlides">
+											<div class="numbertext">2 / 4</div>
+											<CENTER><img src="images/horokos-2.jpg" style="height:50%; width:50%"></CENTER>
+										</div>
+
+										<div class="mySlides">
+											<div class="numbertext">3 / 4</div>
+											<CENTER><img src="images/horokos-malum.png" style="height:60%; width:60%"></CENTER>
+										</div>
+					
+										<div class="mySlides">
+											<div class="numbertext">4 / 4</div>
+											<CENTER><img src="images/H&P-group.jpg" style="height:60%; width:60%"></CENTER>
+										</div>
+								
+										<!-- Next/previous controls -->
+											<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+											<a class="next" onclick="plusSlides(1)">&#10095;</a>
+									
+										<!-- Caption text -->
+											<div class="caption-container">
+												<p id="caption"></p>
+											</div>
+									</div>
+								</div>
+					
+					<p><H5><font color="white">ddddddddddddddddddddddddd</font></H5></p>
+					<p></font><font color="black">*Note: All pictures, logos and stories are the property of the Imaginary Studios team members and contributors.</font></p>
 				</div>
-						<p><H5><font color="white">ddddddddddddddddddddddddd</font></H5></p>
-					<p><font color="white">DDD</font><font color="black">*Note: All pictures, logos and stories are the property of the Imaginary Studios team members and contributors.</font></p>
 			</section>
 
-		<!-- Footer -->
+			
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+	<!-- Footer -->
 			<footer id="footer">
 				<div class="container">
 					<ul class="icons">
@@ -123,6 +337,6 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-	</body>
+	
+</body>
 </html>
