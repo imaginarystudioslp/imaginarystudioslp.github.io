@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -144,14 +143,30 @@ img.hover-shadow {
 }
 </style>
 
-	<head>
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<title>John Diaz</title>
-	</head>
-	
-<body>
+<head>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
+	<title>John Diaz</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+</head>
 
-<!-- Images used to open the lightbox -->
+<body>
+	<div id="topnav">
+		<a href="index.html">HOME</a>
+		<a href="news.html">NEWS</a>
+		<a href="projects.html">PROJECTS</a>
+		<a href="archives.html">ARCHIVES</a>
+		<a href="characters.html">CHARACTERS</a>
+		<a href="contributors.html">CONTRIBUTORS </a>
+		<a href="about.html">ABOUT</a>
+	</div>
+</body>
+
+	<hr />
+
+<BODY BGCOLOR="FFFFH" TEXT="#000001" LINK="#33FFFF" VLINK="#330066" ALINK="#330066">
+	
+	<!-- Images used to open the lightbox -->
 <div class="row">
   <div class="column">
     <img src="images/john-f.jpg" style="width: 100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -181,12 +196,12 @@ img.hover-shadow {
 
     <div class="mySlides">
       <div class="numbertext">2 / 3</div>
-      <CENTER><img src="John Diaz/jh-2.png" style="width:80%"></CENTER>
+      <CENTER><img src="John Diaz/jh-2.png" style="width:60%"></CENTER>
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 3</div>
-      <CENTER><img src="John Diaz/jh-3.jpg" style="width:80%"></CENTER>
+      <CENTER><img src="John Diaz/jh-3.jpg" style="width:60%"></CENTER>
     </div>
     
 	
@@ -201,16 +216,6 @@ img.hover-shadow {
 
   </div>
 </div>
-
-<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="copyright">
-						<li>ImaginaryStudiosLP (C) 2020</li>
-						<li>All pictures, logos and stories are the property of the Imaginary Studios team members.</li>
-					</ul>
-				</div>
-			</footer>
 
 <script>
 function openModal() {
@@ -250,6 +255,13 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
-    
-</body>
+	
+</BODY>
+
+	<hr />
+
+<div id="footer">
+    <p>ImaginaryStudiosLP (C) 2020  |  All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+</div>
+
 </html>
