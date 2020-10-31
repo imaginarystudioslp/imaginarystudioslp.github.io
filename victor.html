@@ -25,6 +25,12 @@ body {
   width: 25%;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -135,11 +141,11 @@ img {
 }
 
 img.hover-shadow {
-  transition: 0.3s;
+  transition: 1.3s;
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(204, 0, 0), 0 6px 20px 0 rgb(204, 0, 0);
 }
 </style>
 
@@ -152,13 +158,17 @@ img.hover-shadow {
 
 <body>
 	<div id="topnav">
-		<a href="index.html">HOME</a>
-		<a href="news.html">NEWS</a>
-		<a href="projects.html">PROJECTS</a>
-		<a href="archives.html">ARCHIVES</a>
-		<a href="characters.html">CHARACTERS</a>
-		<a href="contributors.html">CONTRIBUTORS </a>
-		<a href="about.html">ABOUT</a>
+		<a href="archives.html"><strong>BACK</strong></a>
+		
+		<div class="container">
+				<a href="index.html">HOME</a>
+				<a href="news.html">NEWS</a>
+				<a href="projects.html">PROJECTS</a>
+				<a href="archives.html">ARCHIVES</a>
+				<a href="characters.html">CHARACTERS</a>
+				<a href="contributors.html">CONTRIBUTORS</a>
+				<a href="about.html">ABOUT</a>
+		</div>
 	</div>
 </body>
 
