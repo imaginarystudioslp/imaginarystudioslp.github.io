@@ -147,6 +147,13 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 0 16px rgb(204, 0, 0);
 }
+
+#footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
+
 </style>
 
 <head>
@@ -178,21 +185,22 @@ img.hover-shadow {
 	
 	<!-- Images used to open the lightbox -->
 <div class="row">
-  <div class="column">
-    <img src="victor/000.png" style="width: 100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  <div class="column" style="width: 25%">
+    <img src="victor/000.png" style="width: 90%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   
+  <div class="column" style="width:70%">
 	<h2 style="text-align:center">Victor - "Total drama"</h2>
 	<p><h4 style="text-align:center">written by Lazar P. (Comic Tyrant), drawn by Mortyn</h4></p>
-	<p><h4 style="text-align:center">===============================================================================================</h4></p>
+	<p><h4 style="text-align:center">==========</h4></p>
 	<p><h4 style="text-align:center">A hacker falsely accused of cyber attack works with a private detective to prove his innocence.</h4></p>
-	<p><h4 style="text-align:center">===============================================================================================</h4></p>
+	<p><h4 style="text-align:center">==========</h4></p>
 	<p><h4 style="text-align:center"><font color="red">	>> To access the reading mode just click on the cover image. << </font></h4></p>
-	<p><h4 style="text-align:center">===============================================================================================</h4></p>
+	<p><h4 style="text-align:center">==========</h4></p>
 	<p><h4 style="text-align:center">You can visit the following links to support creators:</h4></p>
 	<p><h4 style="text-align:center"><a href="https://www.deviantart.com/mortyn">Mortyn on DeviantArt</a></h4></p>
 	<p><h4 style="text-align:center"><a href="https://www.deviantart.com/comictyrant">ComicTyrant on DeviantArt</a></h4></p>
-	
+	</div>
 </div>
 
 <!-- The Modal/ Lightbox -->
@@ -295,13 +303,11 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
-    
 	
 </BODY>
 
-	<hr />
-
 <div id="footer">
+  <hr />
     <p>ImaginaryStudiosLP (C) 2021  |  All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
 </div>
 

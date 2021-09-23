@@ -3192,12 +3192,12 @@
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			color: #aaa;
+			color: #737373;
 			text-decoration: none;
 		}
 
 			#footer a:active, #footer a:hover {
-				color: #666;
+				color: #404040;
 			}
 
 		#footer .icons {
@@ -3216,6 +3216,7 @@
 			margin: 2em 0;
 			padding: 0;
 			text-align: center;
+			color: #404040;
 		}
 
 			#footer .copyright li {
