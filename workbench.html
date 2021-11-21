@@ -1,151 +1,16 @@
 <html>
 
 <style>
+
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   background-color: white;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.row > .column {
-  padding: 10px 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #ebe8e8;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgb(166, 166, 166);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 1.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgb(204, 0, 0), 0 6px 20px 0 rgb(204, 0, 0);
 }
 
 #footer {
@@ -183,66 +48,27 @@ img.hover-shadow {
 
 <BODY BGCOLOR="FFFFH" TEXT="#000001" LINK="#33FFFF" VLINK="#330066" ALINK="#330066">
 	
-<p><h3>Imaginary Studios Workbench is a hub for test pages for experimental scenarios. Workbench itself is a test page, which is not accessible from the main Imaginary Studios website.</h3></p>
-<hr />
-<p>Mockup ideas and basic description of characters:</p>
-<p><a href="gertude.html"><h4>Gertude</h4></a></p>
-<p><a href="edward.html"><h4>Edward</h4></a></p>
-<p><a href="william.html"><h4>William</h4></a></p>
-<p><a href="emerald.html"><h4>Emerald</h4></a></p>
-<p><a href="galahalahala.html"><h4>Galahalahala</h4></a></p>
-<p><a href="marcus.html"><h4>Marcus (Silver Tiger)</h4></a></p>
-<p><a href="meep.html"><h4>Meep</h4></a></p>
-<p><a href="steward.html"><h4>Steward</h4></a></p>
-
-<hr />
-<p>Proposals for scenarios and stories:</p>
-<p><a href="scenarios/cosmic-force-sand-village.pdf"><h4>Cosmic Force - Sand Village - Final script (pdf file)</h4></a></p>
-<p><a href="scenarios/heroes-united.pdf"><h4>Heroes United (pdf file)</h4></a></p>
-<p><a href="scenarios/supremes-mystic-power-draft.pdf"><p><h4>Supremes - Mystic Power [draft] (pdf file)</h4></a></p>
-<p><a href="scenarios/Plave jakne1.pdf"><p><h4>Plave jakne - Prva epizoda (pdf file)</h4></a></p>
-<br></br>
-<br></br>
-<br></br>
-
-<script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
+  <p><h3>Imaginary Studios Workbench is a hub for test pages for experimental scenarios. Workbench itself is a test page, which is not accessible from the main Imaginary Studios website.</h3></p>
+  <hr />
+  <p>Mockup ideas and basic description of characters:</p>
+  <p><a href="gertude.html"><h4>Gertude</h4></a></p>
+  <p><a href="edward.html"><h4>Edward</h4></a></p>
+  <p><a href="william.html"><h4>William</h4></a></p>
+  <p><a href="emerald.html"><h4>Emerald</h4></a></p>
+  <p><a href="galahalahala.html"><h4>Galahalahala</h4></a></p>
+  <p><a href="marcus.html"><h4>Marcus (Silver Tiger)</h4></a></p>
+  <p><a href="meep.html"><h4>Meep</h4></a></p>
+  <p><a href="steward.html"><h4>Steward</h4></a></p>
+  <hr />
+  <p>Proposals for scenarios and stories:</p>
+  <p><a href="scenarios/cosmic-force-sand-village.pdf"><h4>Cosmic Force - Sand Village - Final script (pdf file)</h4></a></p>
+  <p><a href="scenarios/heroes-united.pdf"><h4>Heroes United (pdf file)</h4></a></p>
+  <p><a href="scenarios/supremes-mystic-power-draft.pdf"><h4>Supremes - Mystic Power [draft] (pdf file)</h4></a></p>
+  <p><a href="scenarios/Plave jakne1.pdf"><h4>Plave jakne - Prva epizoda (pdf file) [SRB]</h4></a></p>
+  <p><a href="botari.html"><h4>Botari - 12 epizoda [SRB]</h4></a></p>
+  <br></br>
+  <br></br>
+  <br></br>
 	
 </BODY>
 
