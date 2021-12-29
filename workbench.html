@@ -13,6 +13,25 @@ body {
   justify-content: flex-end;
 }
 
+/* a Two Column Layout */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #footer {
   position: fixed;
   bottom: 10px;
@@ -24,7 +43,7 @@ body {
 <head>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
-	<title>Workbench</title>
+	<title>Workbench 🛠️</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
 </head>
 
@@ -51,30 +70,40 @@ body {
   <p><h3>Imaginary Studios Workbench is a hub for test pages for experimental scenarios. Workbench itself is a test page, which is not accessible from the main Imaginary Studios website.</h3></p>
   <hr />
   <p>Mockup ideas and basic description of characters:</p>
-  <p><a href="gertude.html"><h4>Gertude</h4></a></p>
-  <p><a href="edward.html"><h4>Edward</h4></a></p>
-  <p><a href="william.html"><h4>William</h4></a></p>
-  <p><a href="emerald.html"><h4>Emerald</h4></a></p>
-  <p><a href="galahalahala.html"><h4>Galahalahala</h4></a></p>
-  <p><a href="marcus.html"><h4>Marcus (Silver Tiger)</h4></a></p>
-  <p><a href="meep.html"><h4>Meep</h4></a></p>
-  <p><a href="steward.html"><h4>Steward</h4></a></p>
+  <div class="row">
+    <div class="column">
+      <p><a href="gertude.html"><b>Gertude</b></a></p>
+      <p><a href="edward.html"><b>Edward</b></a></p>
+      <p><a href="william.html"><b>William</b></a></p>
+      <p><a href="emerald.html"><b>Emerald</b></a></p>
+    </div>  
+    <div class="column">
+      <p><a href="galahalahala.html"><b>Galahalahala</b></a></p>
+      <p><a href="marcus.html"><b>Marcus (Silver Tiger)</b></a></p>
+      <p><a href="meep.html"><b>Meep</b></a></p>
+      <p><a href="steward.html"><b>Steward</b></a></p>
+    </div>  
+  </div>  
   <hr />
+
   <p>Proposals for scenarios and stories:</p>
-  <p><a href="scenarios/cosmic-force-sand-village.pdf"><h4>Cosmic Force - Sand Village - Final script (pdf file)</h4></a></p>
-  <p><a href="scenarios/heroes-united.pdf"><h4>Heroes United (pdf file)</h4></a></p>
-  <p><a href="scenarios/supremes-mystic-power-draft.pdf"><h4>Supremes - Mystic Power [draft] (pdf file)</h4></a></p>
-  <p><a href="scenarios/Plave jakne1.pdf"><h4>Plave jakne - Prva epizoda (pdf file) [SRB]</h4></a></p>
-  <p><a href="botari.html"><h4>Botari - 18 epizoda [SRB]</h4></a></p>
-  <br></br>
-  <br></br>
-  <br></br>
+  <div class="row">
+    <div class="column">
+      <p><a href="scenarios/cosmic-force-sand-village.pdf"><h4>Cosmic Force - Sand Village - Final script (pdf file)</h4></a></p>
+      <p><a href="scenarios/heroes-united.pdf"><h4>Heroes United (pdf file)</h4></a></p>
+      <p><a href="scenarios/supremes-mystic-power-draft.pdf"><h4>Supremes - Mystic Power [draft] (pdf file)</h4></a></p>
+    </div>
+    <div class="column">
+      <p><a href="scenarios/Plave jakne1.pdf"><h4>Plave jakne - Prva epizoda (pdf file) [SRB]</h4></a></p>
+      <p><a href="botari.html"><h4>Botari - 18 epizoda [SRB]</h4></a></p>
+    </div>
+  </div>
 	
 </BODY>
 
 <div id="footer">
 	<hr />
-    <p>ImaginaryStudiosLP (C) 2021  |  All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+    <p>ImaginaryStudiosLP (C) 2022  |  All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
 </div>
 
 </html>

@@ -13,6 +13,25 @@ body {
   justify-content: flex-end;
 }
 
+/* a Two Column Layout */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #footer {
   position: fixed;
   bottom: 10px;
@@ -24,7 +43,7 @@ body {
 <head>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
-	<title>Botari</title>
+	<title>Botari 🛠️</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
 </head>
 
@@ -42,35 +61,37 @@ body {
 
 <BODY BGCOLOR="FFFFH" TEXT="#000001" LINK="#33FFFF" VLINK="#330066" ALINK="#330066">
 
-  <p><a href="scenarios/botari/botari-ep-01.pdf"><h4>Epizoda 1 - Vozački ispit</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-02.pdf"><h4>Epizoda 2 - Jakuza</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-03.pdf"><h4>Epizoda 3 - Bekstvo iz zatvora</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-04.pdf"><h4>Epizoda 4 - Magični cvet</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-05.pdf"><h4>Epizoda 5 - Restoran na vodi</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-06.pdf"><h4>Epizoda 6 - Rudari</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-07.pdf"><h4>Epizoda 7 - Potraga za...</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-08.pdf"><h4>Epizoda 8 - Serviseri</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-09.pdf"><h4>Epizoda 9 - Botari prehrana</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-10.pdf"><h4>Epizoda 10 - Scavenger hunt</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-11.pdf"><h4>Epizoda 11 - Fudbal</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-12.pdf"><h4>Epizoda 12 - Poljoprivredni život</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-13.pdf"><h4>Epizoda 13 - Mlekadžije</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-14.pdf"><h4>Epizoda 14 - Isterivači duhova</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-15.pdf"><h4>Epizoda 15 - Astronauti 1.deo (Raketni pogon)</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-16.pdf"><h4>Epizoda 16 - Astronauti 2. deo (Sa druge strane Meseca)</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-17.pdf"><h4>Epizoda 17 - Nevolje sa Deda Mrazom</h4></a></p>
-  <p><a href="scenarios/botari/botari-ep-18.pdf"><h4>Epizoda 18 - Medicinski tehničari</h4></a></p>
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
-	
+  <div class="row">
+    <div class="column">
+      <p><a href="scenarios/botari/botari-ep-01.pdf"><h4>Epizoda 1 - Vozački ispit</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-02.pdf"><h4>Epizoda 2 - Jakuza</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-03.pdf"><h4>Epizoda 3 - Bekstvo iz zatvora</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-04.pdf"><h4>Epizoda 4 - Magični cvet</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-05.pdf"><h4>Epizoda 5 - Restoran na vodi</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-06.pdf"><h4>Epizoda 6 - Rudari</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-07.pdf"><h4>Epizoda 7 - Potraga za...</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-08.pdf"><h4>Epizoda 8 - Serviseri</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-09.pdf"><h4>Epizoda 9 - Botari prehrana</h4></a></p>
+    </div>
+
+    <div class="column">
+      <p><a href="scenarios/botari/botari-ep-10.pdf"><h4>Epizoda 10 - Scavenger hunt</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-11.pdf"><h4>Epizoda 11 - Fudbal</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-12.pdf"><h4>Epizoda 12 - Poljoprivredni život</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-13.pdf"><h4>Epizoda 13 - Mlekadžije</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-14.pdf"><h4>Epizoda 14 - Isterivači duhova</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-15.pdf"><h4>Epizoda 15 - Astronauti 1.deo (Raketni pogon)</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-16.pdf"><h4>Epizoda 16 - Astronauti 2. deo (Sa druge strane Meseca)</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-17.pdf"><h4>Epizoda 17 - Nevolje sa Deda Mrazom</h4></a></p>
+      <p><a href="scenarios/botari/botari-ep-18.pdf"><h4>Epizoda 18 - Medicinski tehničari</h4></a></p>
+    </div>
+  </div>
+
 </BODY>
 
 <div id="footer">
 	<hr />
-    <p>ImaginaryStudiosLP (C) 2021  |  All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+    <p>ImaginaryStudiosLP (C) 2022  |  All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
 </div>
 
 </html>
