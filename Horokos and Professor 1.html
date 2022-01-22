@@ -1,340 +1,346 @@
 <html>
+  <style>
+    body {
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
+    }
 
-<style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
-}
+    .img-container {
+      text-align: center;
+      display: block;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 5px;
+    }
 
-.img-container {
-  text-align: center;
-  display: block;
-}
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 5px;
-}
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: rgb(45, 45, 45);
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+    }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
+    /* The Close Button */
+    .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 70px;
+      font-weight: bold;
+    }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: rgb(45, 45, 45);
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
+    .close:hover,
+    .close:focus {
+      color: rgb(205, 0, 0);
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 70px;
-  font-weight: bold;
-}
+    .mySlides {
+      display: none;
+    }
 
-.close:hover,
-.close:focus {
-  color: rgb(240, 144, 149);
-  text-decoration: none;
-  cursor: pointer;
-}
+    .cursor {
+      cursor: pointer;
+    }
 
-.mySlides {
-  display: none;
-}
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: rgb(191, 191, 191);
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
 
-.cursor {
-  cursor: pointer;
-}
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: rgb(191, 191, 191);
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgb(115, 115, 115);
+    }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: rgb(191, 191, 191);
+      font-size: 15px;
+      font-weight: bold;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgb(115, 115, 115);
-}
+    img {
+      margin-bottom: 0px;
+    }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: rgb(191, 191, 191);
-  font-size: 15px;
-  font-weight: bold;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
 
-img {
-  margin-bottom: 0px;
-}
+    .demo {
+      opacity: 0.6;
+    }
 
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
 
-.demo {
-  opacity: 0.6;
-}
+    img.hover-shadow {
+      transition: 1.3s;
+    }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+    .hover-shadow:hover {
+      box-shadow: 0 0 18px rgb(204, 0, 0);
+    }
 
-img.hover-shadow {
-  transition: 1.3s;
-}
+    /* BACK button */
+    a:hover {
+      color: rgb(205, 0, 0);
+    }
 
-.hover-shadow:hover {
-  box-shadow: 0 0 18px rgb(204, 0, 0);
-}
+    a { 
+      color: #BFBFBF;
+      text-decoration: none;
+    }
+  </style>
 
-</style>
+  <head>
+	  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	  <link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
+	  <title>Horokos and Professor #1</title>
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+  </head>
 
-<head>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
-	<title>Horokos and Professor #1</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
-</head>
-
-<body style="background-color: rgb(45, 45, 45);">
+  <body style="background-color: rgb(45, 45, 45);">
 	
-  <div class="container">
-    <p>&nbsp;&nbsp;<h3><a href="Horokos and Professor.html" style="text-decoration:none"><b style="color:#BFBFBF">BACK</b></a></h3></p>
-  </div>  
+    <div class="container">
+      &nbsp;&nbsp;<h3 style="text-align: left;"><a href="Horokos and Professor.html">BACK</a></h3>
+    </div>  
 
-	<!-- Image used to open the lightbox -->
+	  <!-- Image used to open the lightbox -->
     <span class="img-container">
-        <img src="horokos and professor 1/h&p-0.jpg" style="width: 35%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="horokos and professor 1/h&p-0.jpg" style="width: 35%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     </span> 
 
     <!-- The Modal/ Lightbox -->
     <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-  
-            <div class="mySlides">
-                <div class="numbertext">0 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-0.jpg" style="width:60%"></CENTER>
-            </div>
-  
-            <div class="mySlides">
-                <div class="numbertext">1 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-1.jpg" style="width:80%"></CENTER>
-            </div>
-  
-            <div class="mySlides">
-                <div class="numbertext">2 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-2.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">3 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-3.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">4 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-4.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext"> 5 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-5.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">6 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-6.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">7 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-7.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">8 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-8.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">9 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-9.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">10 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-10.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">11 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-11.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">12 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-12.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">13 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-13.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">14 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-14.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">15 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-15.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">16 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-16.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">17 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-17.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">18 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-18.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">19 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-19.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">20 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-20.jpg" style="width:80%"></CENTER>
-            </div>
-      
-            <div class="mySlides">
-                <div class="numbertext">21 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-21.jpg" style="width:80%"></CENTER>
-            </div>
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
 
-            <div class="mySlides">
-                <div class="numbertext">22 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-22.jpg" style="width:80%"></CENTER>
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">23 / 23</div>
-                <CENTER><img src="horokos and professor 1/h&p-23.jpg" style="width:80%"></CENTER>
-            </div>
+        <div class="mySlides">
+          <div class="numbertext">0 / 23</div>
+          <CENTER><img src="horokos and professor 1/h&p-0.jpg" style="width:60%"></CENTER>
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">1 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-1.jpg" style="width:80%"></CENTER>
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">2 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-2.jpg" style="width:80%"></CENTER>
+          </div>
       
-            <!-- Next/previous controls -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-            <!-- Caption text -->
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-3.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-4.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext"> 5 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-5.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">6 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-6.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">7 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-7.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">8 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-8.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">9 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-9.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">10 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-10.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">11 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-11.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">12 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-12.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">13 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-13.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">14 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-14.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">15 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-15.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">16 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-16.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">17 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-17.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">18 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-18.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">19 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-19.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">20 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-20.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">21 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-21.jpg" style="width:80%"></CENTER>
+          </div>
 
-        </div>
-  </div>
+          <div class="mySlides">
+            <div class="numbertext">22 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-22.jpg" style="width:80%"></CENTER>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">23 / 23</div>
+            <CENTER><img src="horokos and professor 1/h&p-23.jpg" style="width:80%"></CENTER>
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
   
-  <script>
-  function openModal() {
-    document.getElementById('myModal').style.display = "block";
-  }
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+      </div>
+    </div>
   
-  function closeModal() {
-    document.getElementById('myModal').style.display = "none";
-  }
+    <script>
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
   
-  var slideIndex = 1;
-  showSlides(slideIndex);
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
   
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+      var slideIndex = 1;
+      showSlides(slideIndex);
   
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
   
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
-  </script>
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+  
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
 
   </body>
-  
-  </html>
+</html>

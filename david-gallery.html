@@ -58,7 +58,7 @@
     
     .close:hover,
     .close:focus {
-      color: rgb(240, 144, 149);
+      color: rgb(205, 0, 0);
       text-decoration: none;
       cursor: pointer;
     }
@@ -138,26 +138,36 @@
     .hover-shadow:hover {
       box-shadow: 0 0 18px rgb(204, 0, 0);
     }
+
+    /* BACK button */
+    a:hover {
+      color: rgb(205, 0, 0);
+    }
+
+    a { 
+      color: #BFBFBF;
+      text-decoration: none;
+    }
     
-    </style>
+  </style>
 
-<head>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
-	<title>Victor's gallery</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
-</head>
+  <head>
+	  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	  <link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
+	  <title>David's gallery</title>
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+  </head>
 
-<body style="background-color: rgb(45,45,45);">
+  <body style="background-color: rgb(45,45,45);">
 
-  <div class="container">
-    <p>&nbsp;&nbsp;<h3><a href="Victor.html" style="text-decoration:none"><b style="color:#BFBFBF">BACK</b></a></h3></p>
-  </div> 
+    <div class="container">
+      &nbsp;&nbsp;<h3 style="text-align: left;"><a href="David.html">BACK</a></h3>
+    </div> 
 	
-	<!-- Image used to open the lightbox -->
-    <span class="img-container">
-        <img src="images/victor-g.png" style="width: 35%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    </span> 
+	  <!-- Image used to open the lightbox -->
+      <span class="img-container">
+        <img src="images/david-g.png" style="width: 25%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </span> 
 
     <!-- The Modal/ Lightbox -->
     <div id="myModal" class="modal">
@@ -165,8 +175,13 @@
         <div class="modal-content">
   
             <div class="mySlides">
-                <div class="numbertext">1 / 1</div>
-                <CENTER><img src="images/victor1.png" style="width:85%"></CENTER>
+                <div class="numbertext">1 / 2</div>
+                <CENTER><img src="images/david0.png" style="width:85%"></CENTER>
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">2 / 2</div>
+              <CENTER><img src="images/david-c.jpg" style="width:85%"></CENTER>
             </div>
 
             <!-- Next/previous controls -->
@@ -179,48 +194,48 @@
             </div>
 
         </div>
-  </div>
+
+    </div>
   
-  <script>
-    function openModal() {
-      document.getElementById('myModal').style.display = "block";
-    }
-  
-    function closeModal() {
-      document.getElementById('myModal').style.display = "none";
-    }
-  
-    var slideIndex = 1;
-    showSlides(slideIndex);
-  
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-  
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-  
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    <script>
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+  
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
       }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
-    }
-  </script>
+  
+      var slideIndex = 1;
+      showSlides(slideIndex);
+  
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+  
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+  
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
 
   </body>
   
-  </html>
-
+</html>
