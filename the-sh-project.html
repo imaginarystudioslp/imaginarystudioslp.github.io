@@ -1,96 +1,104 @@
+<!-- Basic theme by ImaginaryStudiosLP team -->
 <html>
+  <style>
+    body {
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
+      background-color: white;
+    }
 
-<style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
 
-body {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
-  background-color: white;
-}
+    /* a Two Column Layout */
+    * {
+      box-sizing: border-box;
+    }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
 
-/* a Two Column Layout */
-* {
-  box-sizing: border-box;
-}
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
+    /* Glowing Links */
+    a.glow {
+	    text-decoration: none;
+	    color: rgb(77, 165, 192);
+    }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    a.glow:hover {
+      text-decoration: none;
+      color:rgb(205, 0, 0);
+    }
 
-#footer {
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-}
+    #footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+    }
+  </style>
 
-</style>
+  <head>
+	  <link rel="shortcut icon" href="workbench/work.ico" type="image/x-icon">
+	  <link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
+	  <title>The Super Hero Project 🛠️</title>
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+  </head>
 
-<head>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
-	<title>The Super Hero Project 🛠️</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
-</head>
-
-<body>
+  <header>
     <div id="topnav">
       <a href="workbench.html"><strong>BACK</strong></a>
-		<div class="container">
-			<p><b>*Note:</b> This is a test page for experimental scenarios.</p>
-		</div>
+
+		  <div class="container">
+			  <p><b>*Note:</b> This is a test page for experimental scenarios.</p>
+		  </div>
     </div>
-</body>
+  </header>
 
 	<hr />
 
-<BODY BGCOLOR="FFFFH" TEXT="#000001" LINK="#33FFFF" VLINK="#330066" ALINK="#330066">
-  <p><b>Script and story by ComicTyrant</b></p>
-  <div class="row">
-    <div class="column">
-      <p><a href="scenarios/the sh project/TheSuperHero_project_01.pdf"><h4>Episode 1</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_02.pdf"><h4>Episode 2</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_03.pdf"><h4>Episode 3</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_04.pdf"><h4>Episode 4</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_05.pdf"><h4>Episode 5</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_06.pdf"><h4>Episode 6</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_07.pdf"><h4>Episode 7</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_08.pdf"><h4>Episode 8</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_09.pdf"><h4>Episode 9</h4></a></p>
-    </div>
+  <body>
+    <p><b>Script and story by ComicTyrant</b></p>
+    <div class="row">
+      <div class="column">
+        <p><a href="scenarios/the sh project/TheSuperHero_project_01.pdf" class="glow"><h4>Episode 1</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_02.pdf" class="glow"><h4>Episode 2</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_03.pdf" class="glow"><h4>Episode 3</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_04.pdf" class="glow"><h4>Episode 4</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_05.pdf" class="glow"><h4>Episode 5</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_06.pdf" class="glow"><h4>Episode 6</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_07.pdf" class="glow"><h4>Episode 7</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_08.pdf" class="glow"><h4>Episode 8</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_09.pdf" class="glow"><h4>Episode 9</h4></a></p>
+      </div>
 
-    <div class="column">
-      <p><a href="scenarios/the sh project/TheSuperHero_project_10.pdf"><h4>Episode 10</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_11.pdf"><h4>Episode 11</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_12.pdf"><h4>Episode 12</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_13.pdf"><h4>Episode 13</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_14.pdf"><h4>Episode 14</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_15.pdf"><h4>Episode 15</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_16.pdf"><h4>Episode 16</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_17.pdf"><h4>Episode 17</h4></a></p>
-      <p><a href="scenarios/the sh project/TheSuperHero_project_18.pdf"><h4>Episode 18</h4></a></p>
-    </div>
-  </div>
+      <div class="column">
+        <p><a href="scenarios/the sh project/TheSuperHero_project_10.pdf" class="glow"><h4>Episode 10</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_11.pdf" class="glow"><h4>Episode 11</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_12.pdf" class="glow"><h4>Episode 12</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_13.pdf" class="glow"><h4>Episode 13</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_14.pdf" class="glow"><h4>Episode 14</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_15.pdf" class="glow"><h4>Episode 15</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_16.pdf" class="glow"><h4>Episode 16</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_17.pdf" class="glow"><h4>Episode 17</h4></a></p>
+        <p><a href="scenarios/the sh project/TheSuperHero_project_18.pdf" class="glow"><h4>Episode 18</h4></a></p>
+      </div>
+    </div>  
+  </body>
 
-</BODY>
-
-<div id="footer">
-	<hr />
+  <div id="footer">
+	  <hr />
     <p>ImaginaryStudiosLP (C) 2022  |  All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
-</div>
-
+  </div>
 </html>
