@@ -1,7 +1,6 @@
+<!-- Basic dark theme by ImaginaryStudiosLP team -->
 <html>
-
   <style>
-
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
     }
@@ -151,90 +150,90 @@
 
   </style>
 
-<head>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
-	<title>Project SH - Short comic</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
-</head>
+  <head>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type"text/css" href="assets/css/h&p.css">
+    <title>Project SH - Short comic</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+  </head>
 
-<body style="background-color: rgb(45,45,45);">
+  <body style="background-color: rgb(45,45,45);">
 
-  <div class="container">
-    &nbsp;&nbsp;<h3 style="text-align: left;"><a href="Project SH.html">BACK</a></h3>
-  </div>  
-	
-	<!-- Image used to open the lightbox -->
-    <span class="img-container">
-        <img src="Project SH/the_superhero_page_1.jpg" style="width: 35%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    </span> 
+    <div class="container">
+      &nbsp;&nbsp;<h3 style="text-align: left;"><a href="Project SH.html">BACK</a></h3>
+    </div>  
+    
+    <!-- Image used to open the lightbox -->
+      <span class="img-container">
+          <img src="Project SH/the_superhero_page_1.jpg" style="width: 35%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </span> 
 
-    <!-- The Modal/ Lightbox -->
-    <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-  
-            <div class="mySlides">
-                <div class="numbertext">1 / 2</div>
-                <CENTER><img src="Project SH/the_superhero_page_1.jpg" style="width:70%"></CENTER>
-            </div>
-  
-            <div class="mySlides">
-                <div class="numbertext">2 / 2</div>
-                <CENTER><img src="Project SH/the_superhero_page_2.jpg" style="width:70%"></CENTER>
-            </div>
-  
-            <!-- Next/previous controls -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-            <!-- Caption text -->
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
+      <!-- The Modal/ Lightbox -->
+      <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+    
+              <div class="mySlides">
+                  <div class="numbertext">1 / 2</div>
+                  <CENTER><img src="Project SH/the_superhero_page_1.jpg" style="width:70%"></CENTER>
+              </div>
+    
+              <div class="mySlides">
+                  <div class="numbertext">2 / 2</div>
+                  <CENTER><img src="Project SH/the_superhero_page_2.jpg" style="width:70%"></CENTER>
+              </div>
+    
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+              <!-- Caption text -->
+              <div class="caption-container">
+                  <p id="caption"></p>
+              </div>
 
-        </div>
-  </div>
-  
-  <script>
-  function openModal() {
-    document.getElementById('myModal').style.display = "block";
-  }
-  
-  function closeModal() {
-    document.getElementById('myModal').style.display = "none";
-  }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
-  </script>
+          </div>
+
+      </div>
+    
+    <script>
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
+      
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
 
   </body>
-  
-  </html>
+</html>
