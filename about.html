@@ -6,6 +6,33 @@
 -->
 <!-- Dark theme added by ImaginaryStudiosLP team -->
 <html>
+	<style>
+		img {
+			border-radius: 2.5%;
+		}
+
+		/* a Two Column Layout */
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 50%;
+			padding: 5px;
+			text-align: center;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+	</style>
+
 	<head>
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<title>About - Imaginary Studios</title>
@@ -13,6 +40,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	
 	<body>
 		<!-- Header -->
 			<header id="header">
@@ -49,23 +77,25 @@
 					</div>
 
 					<br></br>
-					<p><b>Imaginary Studios</b> represents a team of people who like to write interesting stories, draw comics, and have fun.</p>
-					<p>The original team members are: <b>ComicTyrant</b> and <b>George Ive</b>.</p>
-					<p>You can contact us at the following email address: <b style="color:#F09095">imaginarystudioslp@gmail.com</b> to get in touch.</p>
+					<p align="center"><b>Imaginary Studios</b> represents a team of people who like to write interesting stories, draw comics, and have fun.</p>
+					<p align="center">You can contact us at the following email address: <a href = "mailto: imaginarystudioslp@gmail.com">imaginarystudioslp@gmail.com</a>, to get in touch.</p>
+					<br></br>
+					<CENTER><p><h2>Our team</h2></p></CENTER>
+					<br></br>
+					<div class="row">
+						<div class="column">
+							<img src="https://a.deviantart.net/avatars-big/c/o/comictyrant.jpg?11">
+							<p><b><H3>Lazar P. (also known as ComicTyrant)</H3></b></p>
+							<p>Writing and editing for Horokos and Professor comic series, Victor - Total drama, John Diaz and Lizard and Nemiko short comics.</p>
+							<p><b><a href="https://www.deviantart.com/comictyrant">ComicTyrant on DevianArt</a></b></p>
+						</div>
 
-					<hr />
-
-					<p><h2>Our team</h2></p>
-					<img src="https://a.deviantart.net/avatars-big/c/o/comictyrant.jpg?11">
-					<p><b><H3>Lazar P. (also known as ComicTyrant)</H3></b></p>
-					<p>Writing and editing for <b>"Horokos and Professor - Under the full Moon"</b>, <b>"Victor - Total drama"</b>, <b>"John Diaz"</b> and <b>"Lizard and Nemiko"</b>.</p>
-					<p><b><a href="https://www.deviantart.com/comictyrant">ComicTyrant on DevianArt</a></b></p>
-					<hr />
-						
-					<img src="images/avatar.jpg" width="100" height="100" alt="">
-					<p><b><H3>George Ive</H3></b></p>
-					<p>Writing for <b>"Horokos and Professor - Under the full Moon"</b> and technical support.</p>
-					<hr />
+						<div class="column">
+							<img src="images/avatar.jpg" width="100" height="100" alt="">
+							<p><b><H3>George Ive</H3></b></p>
+							<p>Writing for Horokos and Professor comic series. Website design, maintenance and technical support.</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
