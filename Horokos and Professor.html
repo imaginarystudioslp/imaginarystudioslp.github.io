@@ -1,0 +1,318 @@
+<!-- Basic dark theme by ImaginaryStudiosLP team -->
+<html>
+  <style>
+    body {
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
+      background-color: #151515;
+      color: #ffdead;
+    }
+
+    /* List of Links */
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .row > .column {
+      padding: 10px 10px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #151515;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #c2a405;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 70px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: #c2a405;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: black;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #ffdead;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    img {
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+    /* Footer for Modal Content */
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: #ffdead;
+    }
+
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    img.hover-shadow {
+      transition: 1.3s;
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 0 16px rgb(204, 0, 0);
+    }
+
+    /* Glowing Links */
+    a.glow {
+	    text-decoration: none;
+	    color: #c2a405;
+    }
+
+    a.glow:hover {
+      text-decoration: none;
+      color:rgb(205, 0, 0);
+    }
+    
+    /* Footer */
+    #footer {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+    }
+  </style>
+
+  <head>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+    <title>Horokos and Professor &#x2022; Imaginary Studios</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+  </head>
+
+  <header>
+    <div id="topnav">
+      <a href="archives.html"><strong>Back</strong></a>
+
+      <div class="container">
+          <div class="container">
+              <a href="news.html"><b>News</b></a>
+              <a href="projects.html"><b>Projects</b></a>
+              <a href="archives.html"><b>Archives</b></a>
+              <a href="characters.html"><b>Characters</b></a>
+              <a href="contributors.html"><b>Contributors</b></a>
+              <a href="about.html"><b>About</b></a>
+            </div>
+        </div>
+    </div>
+  </header>
+
+	<hr />
+
+    <body>
+        <!-- Image used to open the lightbox -->
+        <div class="row">
+          <div class="column" style="width:30%">
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Cover page</b></p>
+              <img src="images/h&p-cover.jpg" style="width:220px; height: 300px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+        
+          <div class="column" style="width:70%">
+            <h2><font color="tomato">Horokos and Professor</font></h2>
+              <p><h4>Comic book series</h4></p>
+              <hr />
+              <p><b> Genre(s):</b> Mistery, Action, Adventure</p>
+              <p><b> Writer(s):</b> Lazar P. (Comic Tyrant) and George Ive</p>
+              <p><b> Artist(s):</b> Adel, DeMon-49</p>
+              <p><b> Publisher:</b> Imaginary Studios</p>
+              <p><b> Date of publication:</b> April 15, 2020</p>
+              <hr />
+              <p><b>Summary:</b></p>
+              <p align="justify">
+                This story follows two characters: Horokos, a very skilled user of dark magic, and Professor, an android with a high level of intelligence.
+                They live together in a small town with many mysteries and explore paranormal activities.
+              </p>
+              <hr />
+              <p>You can visit the following links to support creators:</p>
+              <p>
+                <b><a href="https://www.deviantart.com/demon-49" class="glow">Demon-49 on DeviantArt</a></b>&nbsp;&nbsp;&nbsp;
+                <b><a href="https://twitter.com/DemonART61" class="glow">Demon-61 on Twitter</a></b>&nbsp;&nbsp;&nbsp;
+                <b><a href="https://www.instagram.com/r0cky_bottom/" class="glow">Adel on Instagram</a></b>&nbsp;&nbsp;&nbsp;
+                <b><a href="https://www.deviantart.com/comictyrant" class="glow">ComicTyrant on DeviantArt</a></b>
+              </p>
+              <hr />
+              <p><font color="tomato"><b>Table of issues:</b></font></p>
+              <p>&#x2022;<b><a href="Horokos and Professor 1.html" class="glow"> Horokos and Professor: #1 Under the full moon</a></b></p>
+					    <p>&#x2022;<b><a href="Horokos and Professor 2.html" class="glow"> Horokos and Professor: #2 Into the Ghost Unit</a></b></p>
+              <hr />
+              <p><b>Note:</b> To read click on these links, and then to access the reading mode just click on the cover image.</p>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        
+        <!-- The Modal/ Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 1</div>
+                    <CENTER><img src="horokos and professor 1/h&p-0.png" style="width:60%"></CENTER>
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"><b>ImaginaryStudiosLP (C) 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</b></p>
+                </div>
+            
+            </div>
+        </div>
+    
+        <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+        
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+        
+    </body>
+  
+    <div id="footer">
+        <hr />
+        <p><b><a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/imaginaryteam_" class="glow">Twitter</a></b></p>
+        <p><b>ImaginaryStudiosLP (C) 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</b></p>
+    </div>
+</html>
