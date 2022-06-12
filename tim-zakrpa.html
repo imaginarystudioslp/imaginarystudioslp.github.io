@@ -6,29 +6,29 @@
       background-color: white;
     }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
-    /* a Three Column Layout */
     * {
       box-sizing: border-box;
     }
 
-    /* Create three equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 33%;
-      padding: 5px;
+    .row > .column {
+      padding: 10px 10px;
     }
 
-    /* Clear floats after the columns */
     .row:after {
       content: "";
       display: table;
       clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
     }
 
     /* Glowing Links */
@@ -157,9 +157,10 @@
     }
 
     .hover-shadow:hover {
-      box-shadow: 0 0 30px rgb(204, 0, 0);
+      box-shadow: 0 0 16px rgb(204, 0, 0);
     }
 
+    /* Footer */
     #footer {
       position: fixed;
       bottom: 0px;
@@ -168,67 +169,54 @@
   </style>
 
   <head>
-	  <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
-	  <link rel="stylesheet" type"text/css" href="assets/css/basic-white.css">
-	  <title>Tim Zakrpa 🛠️</title>
-	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+    <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
+    <link rel="stylesheet" type"text/css" href="assets/css/basic-white.css">
+    <title>Tim Zakrpa 🛠️</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
 
   <header>
     <div id="topnav">
       <a href="svet-kamore.html"><strong>Back</strong></a>
 
-		  <div class="container">
-			  <p><b>Note:</b> This is a test page for experimental scenarios.</p>
-		  </div>
+      <div class="container">
+        <p><b>Note:</b> This is a test page for experimental scenarios.</p>
+      </div>
     </div>
   </header>
 
-	<hr />
+  <hr />
 
   <body>
-    <p>&nbsp;&nbsp;&nbsp; Scenario i priča by Lazar P. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Art by Valentina & Demon-49</p>
-    <hr />
+
+    <!-- Image used to open the lightbox -->
     <div class="row">
-      <div class="column">
-        <p>&nbsp;&nbsp;&nbsp;Epizode:</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep1.pdf" class="glow"><b> Epizoda 1</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep2.pdf" class="glow"><b> Epizoda 2</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep3.pdf" class="glow"><b> Epizoda 3</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep4.pdf" class="glow"><b> Epizoda 4</b></a></p>
+      <div class="column" style="width:30%">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Crteži</b></p>
+        <p><font color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Pritiskom na ikonicu pristupa se galeriji</i></font></p>
+        <img src="workbench studio/gallery.png" style="width: 30%; border: 1px solid black;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
-
-      <div class="column">
-        <br></br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep5.pdf" class="glow"><b> Epizoda 5</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep6.pdf" class="glow"><b> Epizoda 6</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep7.pdf" class="glow"><b> Epizoda 7</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep8.pdf" class="glow"><b> Epizoda 8</b></a></p>
-      </div>
-
-      <div class="column">
-        <br></br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep9.pdf" class="glow"><b> Epizoda 9</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep10.pdf" class="glow"><b> Epizoda 10</b></a></p>
+      
+      <div class="column" style="width:70%">
+        <h2>Tim Zakrpa</h2>
+        <hr />
+        <p>Scenario i priča by Lazar P.</p>
+        <p>Art by Valentina & Demon-49</p>
+        <hr />
+        <p><b>Epizode:</b></p>
+        <hr />
+        <p>&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep1.pdf" class="glow"><b> Epizoda 1</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep6.pdf" class="glow"><b> Epizoda 6</b></a></p>
+        <p>&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep2.pdf" class="glow"><b> Epizoda 2</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep7.pdf" class="glow"><b> Epizoda 7</b></a></p>
+        <p>&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep3.pdf" class="glow"><b> Epizoda 3</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep8.pdf" class="glow"><b> Epizoda 8</b></a></p>
+        <p>&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep4.pdf" class="glow"><b> Epizoda 4</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep9.pdf" class="glow"><b> Epizoda 9</b></a></p>
+        <p>&#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep5.pdf" class="glow"><b> Epizoda 5</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x2022;<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep10.pdf" class="glow"><b> Epizoda 10</b></a></p>
       </div>
     </div>
-
-    <hr />
-
-    <div class="row">
-      <div class="column">
-        <p>&nbsp;&nbsp;&nbsp;Crteži (<i>Pritiskom na ikonicu pristupa se galeriji</i> ):</p>
-       <!-- Image used to open the lightbox -->
-        <div class="row">
-          <div class="column">
-            <img src="workbench studio/gallery.png" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-          </div>
-        </div>
-
-        <!-- The Modal/ Lightbox -->
-        <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
+    
+    <!-- The Modal/ Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
     
         <div class="mySlides">
           <div class="numbertext">1 / 2</div>
@@ -239,7 +227,7 @@
           <div class="numbertext">2 / 2</div>
           <CENTER><img src="workbench studio/rtg-group.jpg" style="width:90%"></CENTER>
         </div>
-
+      
         <!-- Next/previous controls -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -248,9 +236,10 @@
         <div class="caption-container">
           <p id="caption">ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
         </div>
+    
       </div>
     </div>
-
+    
     <script>
       function openModal() {
         document.getElementById('myModal').style.display = "block";
@@ -290,9 +279,9 @@
       }
     </script>
   </body>
-
+    
   <div id="footer">
-	  <hr />
+    <hr />
     <p>ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
   </div>
 </html>
