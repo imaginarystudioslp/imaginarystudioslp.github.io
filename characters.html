@@ -4,65 +4,43 @@
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
       background-color: #151515;
-      color: #ffdead;
+      color: #f4f4f6;
+      text-align: justify;
     }
 
     /* Image Properties */
     img {
       border-radius: 2.5%;
-      margin-left: 30px;
-    }
-
-    /* List of Links */
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
-    /* a Two Column Layout */
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 5px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
     }
 
     /* Glowing Links */
     a.glow {
 	    text-decoration: none;
-	    color: #c2a405;
+      color: #898ed2;
     }
 
     a.glow:hover {
       text-decoration: none;
-      color:rgb(205, 0, 0);
+      color: #212a91;
     }
 
-    /* Glowing Images */
-		img.hover-shadow {
-			transition: 1.3s;
-	  }
-	  
-		.hover-shadow:hover {
-			box-shadow: 0 0 16px rgb(204, 0, 0);
-	 	}
+    /* Table Properties */
+    table, th, td {
+      border: 1px solid #151515;
+      text-align: justify;
+    }
+    
+    th {
+      padding: 20px;
+    }
+
+    td {
+      padding: 20px;
+    }
 
     /* Footer */
     #footer {
-      position: fixed;
-      bottom: 0px;
+      position: inherit;
       width: 100%;
     }
   </style>
@@ -76,86 +54,100 @@
 
   <header>
     <div id="topnav">
-      <a href="index.html"><strong>IMAGINARY STUDIOS</strong></a>
-
-		  <div class="container">
-				<a href="news.html"><b>News</b></a>
-        <a href="projects.html"><b>Projects</b></a>
-        <a href="archives.html"><b>Archives</b></a>
-        <a href="characters.html"><b>Characters</b></a>
-        <a href="contributors.html"><b>Contributors</b></a>
-        <a href="about.html"><b>About</b></a>
-		  </div>
+      <table style="width: 100%;">
+        <tr>
+          <td style="width: 20%;"><p style="text-align: left;"><strong>IMAGINARY STUDIOS</strong></p></td>
+          <td style="width: 80%;"><p style="text-align: right;">
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="archives.html">Archives</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="characters.html">Characters</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contributors.html">Contributors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">About</a>
+          </p></td>
+        </tr>
+      </table>
 	  </div>
   </header>
-
 	<hr />
-
   <body>
-    <p><h3>&nbsp;&nbsp;&nbsp;<font color ="tomato">Characters</font></h3></p>  
-    <p>&nbsp;&nbsp;&nbsp;Browse through interesting characters and rich stories created by talented writers and cartoonists of our team</p>
+    <table style="width: 100%;">
+      <tr>
+        <td>
+          <p><h3><font color ="#fafafa">Characters</font></h3></p>  
+          <p>Browse through interesting characters and rich stories created by talented writers and cartoonists of our team</p>
+        </td>
+      </tr>
+    </table>
     <hr />
-    <br></br>
-    <div class="row">
-      <div class="column">
-        <p><a href="Emma.html" class="glow"><img src="images/emma-p.png" width="100" height="100" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Emma</b></font>
-          <p>&nbsp;&nbsp;&nbsp;<b><a href="Emma.html" class="glow">Learn more</a></b></p>
-          <br></br>
-          <br></br>
-        </p>
-        
-        <p><a href="David.html" class="glow"><img src="images/david-p.png" width="100" height="100" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>David</b></font>
-          <p>&nbsp;&nbsp;&nbsp;<b><a href="David.html" class="glow">Learn more</a></b></p>
-          <br></br>
-          <br></br>
-        </p>
-    
-        <p><a href="Victor.html" class="glow"><img src="images/victor-p.png" width="100" height="100" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Victor</b></font>
-          <p>&nbsp;&nbsp;&nbsp;<b><a href="Victor.html" class="glow">Learn more</a></b></p>
-          <br></br>
-          <br></br>
-        </p>
-    
-        <p><a href="Professor.html" class="glow"><img src="images/professor-p.png" width="100" height="100" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Professor</b></font>
-          <p>&nbsp;&nbsp;&nbsp;<b><a href="Professor.html" class="glow">Learn more</a></b></p>
-          <br></br>
-          <br></br>
-        </p>
-      </div>
-
-      <div class="column">
-        <p><a href="Horokos.html" class="glow"><img src="images/horokos-p.png" width="100" height="100" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Horokos</b></font>
-          <p>&nbsp;&nbsp;&nbsp;<b><a href="Horokos.html" class="glow">Learn more</a></b></p>
-          <br></br>
-          <br></br>
-        </p>
-    
-        <p><a href="John.html" class="glow"><img src="images/john-p.png" width="100" height="100" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>John</b></font>
-          <p>&nbsp;&nbsp;&nbsp;<b><a href="John.html" class="glow">Learn more</a></b></p>
-          <br></br>
-          <br></br>
-        </p>
-    
-        <p><a href="Masaro.html" class="glow"><img src="images/masaro-p.png" width="100" height="100" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Masaro</b></font>
-          <p>&nbsp;&nbsp;&nbsp;<b><a href="Masaro.html" class="glow">Learn more</a></b></p>
-          <br></br>
-          <br></br>
-        </p>
-      </div>
-    </div>
-    <br></br>
-    <br></br>
-    <br></br>
-
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/emma-p.png" width="100" height="100"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Emma</font></b></p>
+          <p><font color ="#b6b6b8">Police Officer</font></p>
+          <p><font color ="#b6b6b8"><a href="Emma.html" class="glow">Learn more</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/david-p.png" width="100" height="100"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">David</font></b></p>
+          <p><font color ="#b6b6b8">Private Detective</font></p>
+          <p><font color ="#b6b6b8"><a href="David.html" class="glow">Learn more</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/victor-p.png" width="100" height="100"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Victor</font></b></p>
+          <p><font color ="#b6b6b8">Hacker</font></p>
+          <p><font color ="#b6b6b8"><a href="Victor.html" class="glow">Learn more</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/professor-p.png" width="100" height="100"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Professor</font></b></p>
+          <p><font color ="#b6b6b8">Paranormal Investigator</font></p>
+          <p><font color ="#b6b6b8"><a href="Professor.html" class="glow">Learn more</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/horokos-p.png" width="100" height="100"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Horokos</font></b></p>
+          <p><font color ="#b6b6b8">Wizard</font></p>
+          <p><font color ="#b6b6b8"><a href="Horokos.html" class="glow">Learn more</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/john-p.png" width="100" height="100"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">John</font></b></p>
+          <p><font color ="#b6b6b8"><a href="John.html" class="glow">Learn more</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/masaro-p.png" width="100" height="100"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Masaro</font></b></p>
+          <p><font color ="#b6b6b8"><a href="Masaro.html" class="glow">Learn more</a></font></p>
+        </td>
+      </tr>
+    </table>
+    <hr />
   </body>
 
   <div id="footer">
-	  <hr />
-    <p><b>
-      <img src="assets/images/youtube.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp; YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <img src="assets/images/deviantart.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp; DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <img src="assets/images/twitter.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp; Twitter</a>
-    </b></p>
-    <p><b>ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</b></p>
+	  <table style="width: 100%;">
+      <tr><td><p style="text-align: center;">
+        <a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp;⏯️ YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
+      </p></td></tr>
+      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+    </table>
   </div>
 </html>

@@ -5,24 +5,19 @@ body {
 
 #topnav {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
-	overflow: hidden;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 	border-radius: 0px 0px 0px 0px;
 	border: 1px solid #151515;
 	background-color: #151515;
 }
 
 #topnav a {
-	float: left;
-	display: block;
-	color: #c2a405;
-	text-align: center;
-	padding: 14px 16px;
+	color: #898ed2;
 	text-decoration: none;
 }
 
 #topnav a:hover {
-	color: rgb(205, 0, 0);
+	color: #212a91;
 }
 
 #wrap {
@@ -36,7 +31,6 @@ body {
 
 #footer {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
-	padding: 10px;
 	margin-bottom: 0px;
 	border-radius: 0px 0px 0px 0px;
 	border: 1px solid #151515;

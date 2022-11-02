@@ -4,37 +4,35 @@
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
       background-color: #151515;
-      color: #ffdead;
+      color: #f4f4f6;
+      text-align: justify;
     }
 
     /* Image Properties */
     img {
       border-radius: 2.5%;
-      margin-left: 30px;
-    }
-
-    /* List of Links */
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
     }
 
     /* Glowing Links */
     a.glow {
 	    text-decoration: none;
-	    color: #c2a405;
+	    color: #898ed2;
     }
 
     a.glow:hover {
       text-decoration: none;
-      color:rgb(205, 0, 0);
+      color: #212a91;
     }
 
     /* Table Properties */
     table, th, td {
       border: 1px solid #151515;
-      }
+      text-align: justify;
+    }
+
+    th {
+      padding: 20px;
+    }
 
     td {
       padding: 20px;
@@ -42,8 +40,7 @@
 
     /* Footer */
     #footer {
-      position: fixed;
-      bottom: 0px;
+      position: inherit;
       width: 100%;
     }
   </style>
@@ -57,103 +54,103 @@
 
   <header>
     <div id="topnav">
-      <a href="index.html"><strong>IMAGINARY STUDIOS</strong></a>
-
-		  <div class="container">
-				<a href="news.html"><b>News</b></a>
-        <a href="projects.html"><b>Projects</b></a>
-        <a href="archives.html"><b>Archives</b></a>
-        <a href="characters.html"><b>Characters</b></a>
-        <a href="contributors.html"><b>Contributors</b></a>
-        <a href="about.html"><b>About</b></a>
-		  </div>
+      <table style="width: 100%;">
+        <tr>
+          <td style="width: 20%;"><p style="text-align: left;"><strong>IMAGINARY STUDIOS</strong></p></td>
+          <td style="width: 80%;"><p style="text-align: right;">
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="archives.html">Archives</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="characters.html">Characters</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contributors.html">Contributors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">About</a>
+          </p></td>
+        </tr>
+      </table>
 	  </div>
   </header>
-
 	<hr />
-
   <body>
-    <p><h3>&nbsp;&nbsp;&nbsp;<font color ="tomato">About</font></h3></p>  
-    <p>&nbsp;&nbsp;&nbsp;Meet our core team</p>
-    <hr />
-    <br></br>
-    <p><img src="assets/images/logo.png" style="float:left">
-      <br></br>
-      <br></br>
-      <br></br>
-      <p>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b> Imaginary Studios</b></font> represents a team of people who like to write interesting stories, draw comics, and have fun.</p>
-      <p>&nbsp;&nbsp;&nbsp; &#9993; You can contact us at the following email address: <a href = "mailto: imaginarystudioslp@gmail.com" class="glow"><b>imaginarystudioslp@gmail.com</b></a>, to get in touch.</p>
-    </p>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <hr />
-    <p><h3>&nbsp;&nbsp;&nbsp;<font color ="tomato"> Our team</font></h3></p>
-    <hr />
-    <br></br>
-
     <table style="width: 100%;">
       <tr>
-        <th><img src="https://a.deviantart.net/avatars-big/c/o/comictyrant.jpg?11" width="100" height="100" style="float:left"></th>
-        <td><p><font color ="tomato"><b>Lazar P. (also known as ComicTyrant)</b></font></p>
-          <p><b>Founder</b></p>
-          <p align="justify">
-            Lazar created ImaginaryStudios way back before it was a website or even a team. It was the place where he wrote stories and let his imagination run wild.
-          </p>
-          <p align="justify">
-            John Diaz, One shot, and Victor are just small teasers of bigger stories he wrote in addition to many others. 
-            Horokos and Professor is a comic he always wanted to do with George Ive. 
-          </p>
-          <p align="justify">
-            Next to ImaginaryStudios he was doing co-writing for Celestial Guardian and editing for Anonymous comic book industries.
-          </p>
-          <p><b><a href="https://www.deviantart.com/comictyrant" class="glow">ComicTyrant on DevianArt</a></b></p>
-        </td>
-      </tr>
-      <tr>
-        <th><img src="assets/users/avatar.jpg" width="100" height="100" style="float:left"></th>
-        <td><p><font color="tomato"><b>George Ive</b></font></p>
-          <p><b>Co-founder</b></p>
-          <p align="justify">
-            George was the first one to join the team. He immediately created the current version of the website and edited it himself.
-            He works daily on editing and improving the website. 
-          </p>
-          <p align="justify">
-            George had the idea for the Horokos character, and with Lazar, he went through several versions of the story until they decided on the final one 
-            and created the Horokos and Professor comic book series. He is the co-creator and editor of that comic.
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <th><img src="assets/users/basic-avatar.png" width="100" height="100" style="float:left"></th>
-        <td><p><font color="tomato"><b>V13</b></font></p>
-          <p>V13 recently joined the team.</p>
-          <p align="justify">
-            She is a traditional artist, helping with sketching and putting character designs on paper. 
-            She also has a sketchbook with her characters and design that will maybe appear in our universe sooner or later.
-          </p>
-          <p align="justify">
-            V13 went to 'Kardas art' art school, where some of her artworks ended up in a children's coloring book. 
-            She also worked on house models. The small monument she made with her colleagues from school is in a park in her hometown.
-          </p>
+        <td style="width: 100%">
+          <p><h3><font color ="#fafafa">About</font></h3></p>  
+          <p>Meet our core team</p>
         </td>
       </tr>
     </table>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+    <hr />
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 40%; text-align: center;"><img src="assets/images/logo.png" style="width: 60%;"></td>
+        <td style="width: 60%;">
+          <p><font color ="#b6b6b8"><b> Imaginary Studios</b> represents a team of people who like to write interesting stories, draw comics, and have fun.</font></p>
+          <p><font color="#b6b6b8">📮 You can contact us at the following email address:<a href = "mailto: imaginarystudioslp@gmail.com" class="glow"> imaginarystudioslp@gmail.com</a>, to get in touch.</font></p>
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p><h3>&nbsp;&nbsp;&nbsp;<font color ="#fafafa"> Our team</font></h3></p>
+    <hr />
+    <table style="width: 100%;">
+      <tr>
+        <th style="width: 20%; text-align: center;"><img src="https://a.deviantart.net/avatars-big/c/o/comictyrant.jpg?11" width="100" height="100"></th>
+        <td style="width: 80%;"><p><font color ="#fafafa"><b>Lazar P. (also known as ComicTyrant)</b></font></p>
+          <p><font color ="#b6b6b8"><b>Founder</b></font></p>
+          <p align="justify"><font color ="#b6b6b8">
+            Lazar created ImaginaryStudios way back before it was a website or even a team. It was the place where he wrote stories and let his imagination run wild.
+          </font></p>
+          <p align="justify"><font color ="#b6b6b8">
+            John Diaz, One shot, and Victor are just small teasers of bigger stories he wrote in addition to many others. 
+            Horokos and Professor is a comic he always wanted to do with George Ive. 
+          </font></p>
+          <p align="justify"><font color ="#b6b6b8">
+            Next to ImaginaryStudios he was doing co-writing for Celestial Guardian and editing for Anonymous comic book industries.
+          </font></p>
+          <p><a href="https://www.deviantart.com/comictyrant" class="glow">🎨 ComicTyrant on DevianArt</a></p>
+        </td>
+      </tr>
+      <tr>
+        <th style="width: 20%; text-align: center;"><img src="assets/users/avatar.jpg" width="100" height="100"></th>
+        <td style="width: 80%;"><p><font color="#fafafa"><b>George Ive</b></font></p>
+          <p><font color ="#b6b6b8"><b>Co-founder</b></font></p>
+          <p align="justify"><font color ="#b6b6b8">
+            George was the first one to join the team. He immediately created the current version of the website and edited it himself.
+            He works daily on editing and improving the website. 
+          </font></p>
+          <p align="justify"><font color ="#b6b6b8">
+            George had the idea for the Horokos character, and with Lazar, he went through several versions of the story until they decided on the final one 
+            and created the Horokos and Professor comic book series. He is the co-creator and editor of that comic.
+          </font></p>
+        </td>
+      </tr>
+      <tr>
+        <th style="width: 20%; text-align: center;"><img src="assets/users/basic-avatar.png" width="100" height="100"></th>
+        <td style="width: 80%;"><p><font color="#fafafa"><b>V13</b></font></p>
+          <p><font color ="#b6b6b8">V13 recently joined the team.</font></p>
+          <p align="justify"><font color ="#b6b6b8">
+            She is a traditional artist, helping with sketching and putting character designs on paper. 
+            She also has a sketchbook with her characters and design that will maybe appear in our universe sooner or later.
+          </font></p>
+          <p align="justify"><font color ="#b6b6b8">
+            V13 went to 'Kardas art' art school, where some of her artworks ended up in a children's coloring book. 
+            She also worked on house models. The small monument she made with her colleagues from school is in a park in her hometown.
+          </font></p>
+        </td>
+      </tr>
+    </table>
+    <hr />
   </body>
 
   <div id="footer">
-	  <hr />
-    <p><b>
-      <img src="assets/images/youtube.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp; YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <img src="assets/images/deviantart.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp; DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <img src="assets/images/twitter.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp; Twitter</a>
-    </b></p>
-    <p><b>ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</b></p>
+    <table style="width: 100%;">
+      <tr><td><p style="text-align: center;">
+        <a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp;⏯️ YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
+      </p></td></tr>
+      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+    </table>
   </div>
 </html>

@@ -4,65 +4,43 @@
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
       background-color: #151515;
-      color: #ffdead;
+      color: #f4f4f6;
+      text-align: justify;
     }
 
     /* Image Properties */
     img {
 			border-radius: 2.5%;
-      margin-left: 30px;
 		}
-
-    /* List of Links */
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
-     /* a Two Column Layout */
-     * {
-      box-sizing: border-box;
-    }
-
-    /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 5px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
 
     /* Glowing Links */
     a.glow {
 	    text-decoration: none;
-	    color: #c2a405;
+	    color: #898ed2;
     }
 
     a.glow:hover {
       text-decoration: none;
-      color:rgb(205, 0, 0);
+      color: #212a91;
     }
 
-    /* Glowing Images */
-		img.hover-shadow {
-			transition: 1.3s;
-	  	}
-	  
-		.hover-shadow:hover {
-			box-shadow: 0 0 16px rgb(204, 0, 0);
-	 	}
+    /* Table Properties */
+    table, th, td {
+      border: 1px solid #151515;
+      text-align: justify;
+    }
+    
+    th {
+      padding: 20px;
+    }
+
+    td {
+      padding: 20px;
+    }
 
     /* Footer */
     #footer {
-      position: fixed;
-      bottom: 0px;
+      position: inherit;
       width: 100%;
     }
   </style>
@@ -76,138 +54,136 @@
 
   <header>
     <div id="topnav">
-      <a href="index.html"><strong>IMAGINARY STUDIOS</strong></a>
-
-		  <div class="container">
-				<a href="news.html"><b>News</b></a>
-        <a href="projects.html"><b>Projects</b></a>
-        <a href="archives.html"><b>Archives</b></a>
-        <a href="characters.html"><b>Characters</b></a>
-        <a href="contributors.html"><b>Contributors</b></a>
-        <a href="about.html"><b>About</b></a>
-		  </div>
+      <table style="width: 100%;">
+        <tr>
+          <td style="width: 20%;"><p style="text-align: left;"><strong>IMAGINARY STUDIOS</strong></p></td>
+          <td style="width: 80%;"><p style="text-align: right;">
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="archives.html">Archives</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="characters.html">Characters</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contributors.html">Contributors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">About</a>
+          </p></td>
+        </tr>
+      </table>
 	  </div>
   </header>
-
 	<hr />
-
   <body>
-    <p><h3>&nbsp;&nbsp;&nbsp;<font color ="tomato">Archives</font></h3></p>  
-    <p>&nbsp;&nbsp;&nbsp;The hub of all stories</p>
+    <table style="width: 100%;">
+      <tr>
+        <td>
+          <p><h3><font color ="#fafafa">Archives</font></h3></p>  
+          <p>The hub of all stories</p>
+        </td>
+      </tr>
+    </table>
     <hr />
-    <div class="row">
-      <div class="column">
-        <br></br>
-        <p><a href="Second Chance.html"><img src="images/chance-cover.png" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Second Chance!</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Comic book series</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Written by Deathwave.</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Drawn by Deathwave.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Second Chance.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <p><a href="Courageous.html"><img src="images/courageous-cover.png" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Captain Courageous Comics</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Public domain comic</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Public domain super hero</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Original Publisher: Ace Periodicals.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Courageous.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <p><a href="Horokos and Professor.html"><img src="images/h&p-cover.jpg" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Horokos and Professor</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Comic book series</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Written by ComicTyrant and George Ive.</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Drawn by Demon-49 and Adel.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Horokos and Professor.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <p><a href="Tales of Aurora.html"><img src="images/tales-cover.jpg" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>The Unfinished Tales of Aurora</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Collection of short stories</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Story by Spectre Orleans.</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Cover page by Spectre Orleans.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Tales of Aurora.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <p><a href="Project SH.html"><img src="images/superhero-cover.jpg" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Project SH</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Short comic</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Story and character by ComicTyrant and Adel.</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Illustration by Florian Schlotterer.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Project SH.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-      </div>
-      
-      <div class="column">
-        <br></br>
-        <p><a href="One shot.html"><img src="images/oneshot-cover.jpeg" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>One Shot</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Short comic</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Written by ComicTyrant.</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Drawn by GingerFay.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="One shot.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <p><a href="John Diaz.html"><img src="images/john-cover.jpg" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>John Diaz</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Short comic</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Written by ComicTyrant.</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Drawn by Majinfreezer.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="John Diaz.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <p><a href="Lizard and Nemiko.html"><img src="images/lizard-cover.png" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Lizard and Nemiko</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Short comic</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Written by ComicTyrant and Adel.</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Drawn by Adel.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Lizard and Nemiko.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <p><a href="Victor - Total drama.html"><img src="images/victor-cover.png" width="220" height="300" style="float:left" class="hover-shadow cursor"></a>&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Victor - Total drama</b></font>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Short comic</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Written by ComicTyrant.</p>
-          <p>&nbsp;&nbsp;&nbsp;&#x2022; Drawn by Mortyn.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Victor - Total drama.html" class="glow"><b>Read here</b></a></p>
-        </p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-      </div>
-    </div>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/chance-cover.png" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Second Chance!</font></b></p>
+          <p><font color ="#b6b6b8">Comic book series</font></p>
+          <p><font color ="#b6b6b8">Written by Deathwave</font></p>
+          <p><font color ="#b6b6b8">Drawn by Deathwave</font></p>
+          <p><font color ="#b6b6b8"><a href="Second Chance.html" class="glow">Read here</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/courageous-cover.png" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Captain Courageous Comics</font></b></p>
+          <p><font color ="#b6b6b8">Public domain comic</font></p>
+          <p><font color ="#b6b6b8">Public domain super hero</font></p>
+          <p><font color ="#b6b6b8">Original Publisher: Ace Periodicals</font></p>
+          <p><font color ="#b6b6b8"><a href="Courageous.html" class="glow">Read here</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/h&p-cover.jpg" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Horokos and Professor</font></b></p>
+          <p><font color ="#b6b6b8">Comic book series</font></p>
+          <p><font color ="#b6b6b8">Written by ComicTyrant and George Ive</font></p>
+          <p><font color ="#b6b6b8">Drawn by Demon-49 and Adel</font></p>
+          <p><font color ="#b6b6b8"><a href="Horokos and Professor.html" class="glow">Read here</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/tales-cover.jpg" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">The Unfinished Tales of Aurora</font></b></p>
+          <p><font color ="#b6b6b8">Collection of short stories</font></p>
+          <p><font color ="#b6b6b8">Story by Spectre Orleans</font></p>
+          <p><font color ="#b6b6b8">Cover page by Spectre Orleans</font></p>
+          <p><font color ="#b6b6b8"><a href="Tales of Aurora.html" class="glow">Read here</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/superhero-cover.jpg" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Project SH</font></b></p>
+          <p><font color ="#b6b6b8">Short comic</font></p>
+          <p><font color ="#b6b6b8">Story and character by ComicTyrant and Adel</font></p>
+          <p><font color ="#b6b6b8">Illustration by Florian Schlotterer</font></p>
+          <p><font color ="#b6b6b8"><a href="Project SH.html" class="glow">Read here</font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/oneshot-cover.jpeg" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">One Shot</font></b></p>
+          <p><font color ="#b6b6b8">Short comic</font></p>
+          <p><font color ="#b6b6b8">Written by ComicTyrant</font></p>
+          <p><font color ="#b6b6b8">Drawn by GingerFay</font></p>
+          <p><font color ="#b6b6b8"><a href="One shot.html" class="glow">Read here</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/john-cover.jpg" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">John Diaz</font></b></p>
+          <p><font color ="#b6b6b8">Short comic</font></p>
+          <p><font color ="#b6b6b8">Written by ComicTyrant</font></p>
+          <p><font color ="#b6b6b8">Drawn by Majinfreezer</font></p>
+          <p><font color ="#b6b6b8"><a href="John Diaz.html" class="glow">Read here</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/lizard-cover.png" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Lizard and Nemiko</font></b></p>
+          <p><font color ="#b6b6b8">Short comic</font></p>
+          <p><font color ="#b6b6b8">Written by ComicTyrant and Adel</font></p>
+          <p><font color ="#b6b6b8">Drawn by Adel</font></p>
+          <p><font color ="#b6b6b8"><a href="Lizard and Nemiko.html" class="glow">Read here</a></font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/victor-cover.png" width="130" height="200"></td>
+        <td style="width: 80%;">
+          <p><b><font color ="#fafafa">Victor - Total drama</font></b></p>
+          <p><font color ="#b6b6b8">Short comic</font></p>
+          <p><font color ="#b6b6b8">Written by ComicTyrant</font></p>
+          <p><font color ="#b6b6b8">Drawn by Mortyn</font></p>
+          <p><font color ="#b6b6b8"><a href="Victor - Total drama.html" class="glow">Read here</a></font></p>
+        </td>
+      </tr>
+    </table>
+    <hr />
   </body>
 
   <div id="footer">
-	  <hr />
-    <p><b>
-      <img src="assets/images/youtube.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp; YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <img src="assets/images/deviantart.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp; DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <img src="assets/images/twitter.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp; Twitter</a>
-    </b></p>
-    <p><b>ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</b></p>
+    <table style="width: 100%;">
+      <tr><td><p style="text-align: center;">
+        <a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp;⏯️ YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
+      </p></td></tr>
+      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+    </table>
   </div>
 </html>

@@ -4,36 +4,43 @@
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
       background-color: #151515;
-      color: #ffdead;
+      color: #f4f4f6;
+      text-align: justify;
     }
 
     /* Image Properties */
     img {
 			border-radius: 2.5%;
-      margin-left: 30px;
 		}
-
-    /* List of Links */
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
 
     /* Glowing Links */
     a.glow {
 	    text-decoration: none;
-	    color: #c2a405;
+	    color: #898ed2;
     }
 
     a.glow:hover {
       text-decoration: none;
-      color:rgb(205, 0, 0);
+      color: #212a91;
+    }
+
+    /* Table Properties */
+    table, th, td {
+      border: 1px solid #151515;
+      text-align: justify;
+    }
+    
+    th {
+      padding: 20px;
+    }
+
+    td {
+      padding: 20px;
     }
 
     /* Footer */
     #footer {
-      position: fixed;
+      position: inherit;
       bottom: 0px;
       width: 100%;
     }
@@ -48,60 +55,66 @@
 
   <header>
     <div id="topnav">
-      <a href="index.html"><strong>IMAGINARY STUDIOS</strong></a>
-
-		  <div class="container">
-				<a href="news.html"><b>News</b></a>
-        <a href="projects.html"><b>Projects</b></a>
-        <a href="archives.html"><b>Archives</b></a>
-        <a href="characters.html"><b>Characters</b></a>
-        <a href="contributors.html"><b>Contributors</b></a>
-        <a href="about.html"><b>About</b></a>
-		  </div>
+      <table style="width: 100%;">
+        <tr>
+          <td style="width: 20%;"><p style="text-align: left;"><strong>IMAGINARY STUDIOS</strong></p></td>
+          <td style="width: 80%;"><p style="text-align: right;">
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="archives.html">Archives</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="characters.html">Characters</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contributors.html">Contributors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">About</a>
+          </p></td>
+        </tr>
+      </table>
 	  </div>
   </header>
-
 	<hr />
-
   <body>
-    <p><h3>&nbsp;&nbsp;&nbsp;<font color ="tomato">Projects</font></h3></p>  
-    <p>&nbsp;&nbsp;&nbsp;Upcoming projects and projects that are currently under development</p>
+    <table style="width: 100%;">
+      <tr>
+        <td>
+          <p><h3><font color ="#fafafa">Projects</font></h3></p>  
+          <p>Upcoming projects and projects that are currently under development</p>
+        </td>
+      </tr>
+    </table>
     <hr />
-    <br></br>
-    <p><img src="images/h&p-cover.jpg" width="220" height="300" style="float:left">&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>Horokos and Professor</b></font>
-      <p>&nbsp;&nbsp;&nbsp;&#x2022; Comic book series</p>
-      <p>&nbsp;&nbsp;&nbsp;&#x2022; The story of two friends who explore paranormal activities in a small town.</p>
-      <p>&nbsp;&nbsp;&nbsp;&#x2022; Learn more at <a href="https://www.deviantart.com/imaginarystudioslp/art/Horokos-and-Professor-1-Under-the-full-moon-827826726" class="glow"><b>DevianArt page</b></a>.</p>
-      <p>&nbsp;&nbsp;&nbsp;&#x2022; <b>You can read it now on our <a href="Horokos and Professor.html" class="glow">Archives</a> page!</b></p>
-    </p>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <p><img src="images/tales-cover.jpg" width="220" height="300" style="float:left">&nbsp;&nbsp;&nbsp;<font color ="tomato"><b>The Unfinished Tales of Aurora - Part One</b></font>
-      <p>&nbsp;&nbsp;&nbsp;&#x2022; Collection of short stories</p>
-      <p>&nbsp;&nbsp;&nbsp;&#x2022; A collection of short stories from several perspectives, some from humans and others from fantasy creatures.</p>
-      <p>&nbsp;&nbsp;&nbsp;&#x2022; Learn more at <a href="https://www.wattpad.com/story/235510001-the-unfinished-tales-of-aurora-unedited" class="glow"><b>wattpad page</b></a>.</p>
-      <p>&nbsp;&nbsp;&nbsp;&#x2022; <b>You can read it now on our <a href="Tales of Aurora.html" class="glow">Archives</a> page!</b></p>
-    </p>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/h&p-cover.jpg" width="220" height="300"></td>
+        <td style="width: 80%;">
+          <p><font color ="#fafafa"><b>Horokos and Professor</b></font></p>
+          <p><font color ="#b6b6b8"><b>Comic book series</b></font></p>
+          <p><font color="#b6b6b8">The story of two friends who explore paranormal activities in a small town.</font></p>
+          <p><font color="#b6b6b8">Learn more at <a href="https://www.deviantart.com/imaginarystudioslp/art/Horokos-and-Professor-1-Under-the-full-moon-827826726" class="glow">DevianArt page</a>.</font></p>
+          <p><font color="#b6b6b8">You can read it now on our <a href="Horokos and Professor.html" class="glow">Archives</a> page!</font></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 20%; text-align: center;"><img src="images/tales-cover.jpg" width="220" height="300"></td>
+        <td style="width: 80%;">
+          <p><font color ="#fafafa"><b>The Unfinished Tales of Aurora - Part One</b></font></p>
+          <p><font color ="#b6b6b8"><b>Collection of short stories</b></font></p>
+          <p><font color="#b6b6b8">A collection of short stories from several perspectives, some from humans and others from fantasy creatures.</font></p>
+          <p><font color="#b6b6b8">Learn more at <a href="https://www.wattpad.com/story/235510001-the-unfinished-tales-of-aurora-unedited" class="glow">wattpad page</a>.</font></p>
+          <p><font color="#b6b6b8">You can read it now on our <a href="Tales of Aurora.html" class="glow">Archives</a> page!</font></p>
+        </td>
+      </tr>
+    </table>
+    <hr />
   </body>
 
   <div id="footer">
-	  <hr />
-    <p><b>
-      <img src="assets/images/youtube.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp; YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <img src="assets/images/deviantart.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp; DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <img src="assets/images/twitter.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp; Twitter</a>
-    </b></p>
-    <p><b>ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</b></p>
+	  <table style="width: 100%;">
+      <tr><td><p style="text-align: center;">
+        <a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp;⏯️ YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
+      </p></td></tr>
+      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+    </table>
   </div>
 </html>

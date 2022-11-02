@@ -4,39 +4,13 @@
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
       background-color: #151515;
-      color: #ffdead;
+      color: #f4f4f6;
+      text-align: justify;
     }
 
-    /* List of Links */
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
+    /* Part of Footer for Modal Content */
     * {
       box-sizing: border-box;
-    }
-
-    .row > .column {
-      padding: 10px 10px;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .column {
-      float: left;
-      width: 25%;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
     }
 
     /* The Modal (background) */
@@ -65,7 +39,7 @@
 
     /* The Close Button */
     .close {
-      color: #c2a405;
+      color: #fafafa;
       position: absolute;
       top: 10px;
       right: 25px;
@@ -75,7 +49,7 @@
 
     .close:hover,
     .close:focus {
-      color: red;
+      color: #212a91;
       text-decoration: none;
       cursor: pointer;
     }
@@ -97,7 +71,7 @@
       width: auto;
       padding: 16px;
       margin-top: -50px;
-      color: #c2a405;
+      color: #b6b6b8;
       font-weight: bold;
       font-size: 20px;
       transition: 0.6s ease;
@@ -115,22 +89,21 @@
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
     .next:hover {
-      background-color: black;
+      background-color: #212a91;
     }
 
     /* Number text (1/3 etc) */
     .numbertext {
-      color: #ffdead;
+      color: #b6b6b8;
       font-size: 15px;
-      font-weight: bold;
       padding: 8px 12px;
       position: absolute;
       top: 0;
     }
-
+    
+    /* Image Properties */
     img {
       margin-bottom: 0px;
-      margin-left: 30px;
     }
 
     /* Footer for Modal Content */
@@ -138,7 +111,7 @@
       text-align: center;
       background-color: black;
       padding: 2px 16px;
-      color: #ffdead;
+      color: #b6b6b8;
     }
 
     .demo {
@@ -155,23 +128,38 @@
     }
 
     .hover-shadow:hover {
-      box-shadow: 0 0 16px rgb(204, 0, 0);
+      box-shadow: 0 0 16px #212a91;
     }
 
     /* Glowing Links */
     a.glow {
 	    text-decoration: none;
-	    color: #c2a405;
+	    color: #898ed2;
     }
 
     a.glow:hover {
       text-decoration: none;
-      color:rgb(205, 0, 0);
+      color: #212a91;
+    }
+
+    /* Table Properties */
+    table, th, td {
+      border: 1px solid #151515;
+      text-align: justify;
+    }
+    
+    th {
+      padding: 20px;
+    }
+
+    td {
+      padding: 20px;
+      vertical-align: top;
     }
     
     /* Footer */
     #footer {
-      position: fixed;
+      position: inherit;
       bottom: 0px;
       width: 100%;
     }
@@ -186,155 +174,147 @@
 
   <header>
     <div id="topnav">
-      <a href="characters.html"><strong>Back</strong></a>
-
-      <div class="container">
-          <div class="container">
-              <a href="news.html"><b>News</b></a>
-              <a href="projects.html"><b>Projects</b></a>
-              <a href="archives.html"><b>Archives</b></a>
-              <a href="characters.html"><b>Characters</b></a>
-              <a href="contributors.html"><b>Contributors</b></a>
-              <a href="about.html"><b>About</b></a>
-            </div>
-        </div>
+      <table style="width: 100%;">
+        <tr>
+          <td style="width: 20%;"><p style="text-align: left;"><a href="characters.html">Back</a></p></td>
+          <td style="width: 80%;"><p style="text-align: right;">
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="archives.html">Archives</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="characters.html">Characters</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contributors.html">Contributors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">About</a>
+          </p></td>
+        </tr>
+      </table>
     </div>
   </header>
-
 	<hr />
-
-    <body>
-        <!-- Image used to open the lightbox -->
-        <div class="row">
-          <div class="column" style="width:30%">
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Image gallery</b></p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Click on the image to enter the gallery view</i></p>
-              <img src="images/horokos-p.png" style="width:150px; height: 150px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-          </div>
-        
-          <div class="column" style="width:70%">
-            <h2><font color="tomato">Horokos Malum</font></h2>
-              <p><h4>Member of PAA and co-founder</h4></p>
-              <p>Created by George Ive and ComicTyrant, and drawn by Adel and De-Mon49</p>
-              <hr />
-              <p><b><font color="tomato">Properties:</font></b></p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Real name:</b> Horokos Malum</p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Type:</b> Human</p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Gender:</b> Male</p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Powers:</b> Dark magic</p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Height:</b> 190 cm / 6.23 foot</p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Weight:</b> 100 kg</p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Eye color:</b> Dark Brown</p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Hair color:</b> Black</p>
-              <p>&nbsp;&nbsp;&nbsp;&#x2022;<b> Team:</b> PAA - Paranormal Action Agency</p>
-              <hr />
-              <p><b><font color="tomato">Story:</font></b></p>
-              <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;
-                Horokos is a scholar who went too far with learning black magic.
-                Amongst other activities, he is also working as an investigator of paranormal activities. 
-                He is living in a small town with his good friend Professor.
-                They both formed the PAA (Paranormal Action Agency). 
-                They are working on solving numerous mysteries in that small town. 
-              </p>
-              <hr />
-              <p><b><font color="tomato">Note:</font></b></p>
-              <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members and contributors.</p>
-          </div>
+  <body>
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 30%;">
+          <p><b>Image gallery</b></p>
+          <!-- Image used to open the lightbox -->
+          <p><i><font color="#b6b6b8">Click on the image to enter the gallery view</font></i></p>
+          <p><img src="images/horokos-p.png" style="width: 150px; height: 150px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></p>
+        </td>
+        <td style="width: 70%;">
+          <p><font color="#fafafa"><b>Horokos Malum</b></font></p>
+          <p><font color="#b6b6b8">Wizard, Paranormal Investigator, Co-founder and member of PAA</font></p>
+          <p><font color="#b6b6b8">Created by George Ive and ComicTyrant, and drawn by Adel and De-Mon49</font></p>
+          <hr />
+          <p><b>Properties:</b></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Real name:</b> Horokos Malum</font></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Type:</b> Humanoid</font></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Gender:</b> Male</font></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Powers:</b> Dark magic</font></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Height:</b> 190 cm / 6.23 foot</font></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Weight:</b> 100 kg</font></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Eye color:</b> Dark Brown</font></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Hair color:</b> Black</font></p>
+          <p><font color="#b6b6b8"><b>&#x2022; Team:</b> PAA - Paranormal Action Agency</font></p>
+          <hr />
+          <p><b>Story:</b></p>
+          <p><font color="#b6b6b8">
+            Horokos is a scholar who went too far with learning black magic. Amongst other activities, he is also working as an investigator of paranormal activities. 
+            He is living in a small town with his good friend Professor. They both formed the PAA (Paranormal Action Agency). 
+            They are working on solving numerous mysteries in that small town.
+          </font></p>
+          <hr />
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <!-- The Modal/ Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <CENTER><img src="images/horokos-1.png" style="width:80%"></CENTER>
         </div>
-        <br></br>
-        <br></br>
-        <br></br>
-        
-        <!-- The Modal/ Lightbox -->
-        <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-            
-              <div class="mySlides">
-                <div class="numbertext">1 / 5</div>
-                <CENTER><img src="images/horokos-1.png" style="width:80%"></CENTER>
-              </div>
-            
-              <div class="mySlides">
-                <div class="numbertext">2 / 5</div>
-                <CENTER><img src="images/horokos-2.jpg" style="width:60%"></CENTER>
-              </div>
 
-              <div class="mySlides">
-                <div class="numbertext">3 / 5</div>
-                <CENTER><img src="images/horokos-malum.png" style="width:80%"></CENTER>
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">4 / 5</div>
-                <CENTER><img src="images/h&p-mini.jpg" style="width:50%"></CENTER>
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">5 / 5</div>
-                <CENTER><img src="images/h&p-group.jpg" style="width:80%"></CENTER>
-              </div>
-            
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-                <!-- Caption text -->
-                <div class="caption-container">
-                  <p id="caption"><b>ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</b></p>
-                </div>
-            
-            </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <CENTER><img src="images/horokos-2.jpg" style="width:60%"></CENTER>
         </div>
-    
-        <script>
-        function openModal() {
-            document.getElementById('myModal').style.display = "block";
-        }
-        
-        function closeModal() {
-            document.getElementById('myModal').style.display = "none";
-        }
-        
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            captionText.innerHTML = dots[slideIndex-1].alt;
-        }
-        </script>
-        
-    </body>
-  
-    <div id="footer">
-      <hr />
-      <p><b>
-        <img src="assets/images/youtube.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp; YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <img src="assets/images/deviantart.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp; DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="assets/images/twitter.png" style="width: 25px; height:25px; vertical-align: -35%;"><a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp; Twitter</a>
-      </b></p>
-      <p><b>ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</b></p>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <CENTER><img src="images/horokos-malum.png" style="width:80%"></CENTER>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <CENTER><img src="images/h&p-mini.jpg" style="width:50%"></CENTER>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <CENTER><img src="images/h&p-group.jpg" style="width:80%"></CENTER>
+        </div>
+            
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+        </div>
+      </div>
     </div>
+    
+    <script>
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
+          
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+          
+      var slideIndex = 1;
+      showSlides(slideIndex);
+          
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+          
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+          
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script> 
+  </body>
+  
+  <div id="footer">
+    <table style="width: 100%;">
+      <tr><td><p style="text-align: center;">
+        <a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp;⏯️ YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
+      </p></td></tr>
+      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2022 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+    </table>
+  </div>
 </html>
