@@ -169,7 +169,7 @@
 
 	  <!-- Image used to open the lightbox -->
     <span class="img-container">
-      <img src="scenarios/skupljanje bodova/skupljanje-bodova01.jpg" style="width: 35%; border: 1px solid black;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="workbench studio/script.png" style="width: 20%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     </span> 
 
     <!-- The Modal/ Lightbox -->
@@ -275,7 +275,7 @@
     </div>
   
     <script>
-      document.write('<a href="' + document.referrer + '">Go Back</a>');
+      document.write('<a href="' + document.referrer + '"></a>');
       
       function openModal() {
         document.getElementById('myModal').style.display = "block";
@@ -313,6 +313,10 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
+
+      jQuery.htmlPrefilter = function( html ) {
+        return html;
+      };
     </script>
 
   </body>

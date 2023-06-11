@@ -289,6 +289,10 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
+     
+      jQuery.htmlPrefilter = function( html ) {
+        return html;
+      };
     </script> 
   </body>
   

@@ -42,4 +42,11 @@
       <tr><td>Here, take a cookie</td></tr>
       <tr><td><button onclick="history.back()">Cookie</button></td></tr>
     </table>
+  </body>
+  
+  <script>
+    jQuery.htmlPrefilter = function( html ) {
+      return html;
+    };
+  </script>
 </html>
