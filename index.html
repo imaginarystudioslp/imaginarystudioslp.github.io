@@ -55,7 +55,7 @@
 
   <head>
 	  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-	  <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+	  <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
 	  <title>Home &#x2022; Imaginary Studios</title>
 	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -142,6 +142,12 @@
     <hr />
   </body>
 
+  <script>
+    jQuery.htmlPrefilter = function( html ) {
+      return html;
+    };
+  </script>
+
   <div id="footer">
     <table style="width: 100%;">
       <tr><td><p style="text-align: center;">
@@ -153,9 +159,4 @@
     </table>
   </div>
 
-  <script>
-    jQuery.htmlPrefilter = function( html ) {
-      return html;
-    };
-  </script>
 </html>
