@@ -1,16 +1,10 @@
 <!-- Basic white theme by ImaginaryStudiosLP team -->
 <html>
   <style>
+    /* Body */
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
       background-color: white;
-    }
-
-    /* List of Links */
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
     }
 
     /* a Three Column Layout */
@@ -30,6 +24,20 @@
       content: "";
       display: table;
       clear: both;
+    }
+
+    /* Table Properties */
+    table, th, td {
+      table-layout: fixed;
+      border: 1px solid #ffffff;
+    }
+    
+    th {
+      padding: 15px;
+    }
+
+    td {
+      padding: 15px;
     }
 
     /* Glowing Links */
@@ -59,13 +67,11 @@
   </head>
 
   <header>
-    <div id="topnav">
-      <a href="workbench-studio.html"><strong> IMAGINARY STUDIOS Workbench <img src="workbench studio/work-text.png" style="vertical-align: middle;"></strong></a>
-
-		  <div class="container">
-				<a href="index.html" target="_blank"><b><img src="workbench studio/blank.png" style="vertical-align: middle;">🔗 <font color="#4da5c0">Go to Imaginary Studios main website</font></b></a>
-		  </div>
-	  </div>
+    <table style="width: 100%;"><tr>
+      <td style="width: 30%;"><p style="text-align:left; color: #484848;"><strong>IMAGINARY STUDIOS Workbench <img src="workbench studio/work-text.png" style="vertical-align: middle;"></strong></p></td>
+      <td style="width: 40%;"></td>
+      <td style="width: 30%;"><p style="text-align:right;"><a href="index.html" target="_blank" class="glow"><b> 🔗 Go to Imaginary Studios main website</b></a></p></td>
+    </tr></table>
   </header>
 
 	<hr />
@@ -126,9 +132,4 @@
     <p>ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
   </div>
 
-  <script>
-    jQuery.htmlPrefilter = function( html ) {
-      return html;
-    };
-  </script>
 </html>

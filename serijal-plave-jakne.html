@@ -131,9 +131,12 @@
       top: 0;
     }
 
+    /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
-      margin-left: 30px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .caption-container {
@@ -170,7 +173,7 @@
 
   <head>
     <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-white.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-white.css">
     <title>Plave jakne &#x2022; Imaginary Studios Workbench</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -184,16 +187,13 @@
       </div>
     </div>
   </header>
-
   <hr />
-
   <body>
-
     <!-- Image used to open the lightbox -->
     <div class="row">
       <div class="column" style="width:30%">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Crteži</b></p>
-        <p><font color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Pritiskom na ikonicu pristupa se galeriji</i></font></p>
+        <p style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Pritiskom na ikonicu pristupa se galeriji</i></p>
         <img src="workbench studio/gallery.png" style="width: 30%; border-radius: 10%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
       
@@ -217,7 +217,7 @@
     
         <div class="mySlides">
           <div class="numbertext">1 / 1</div>
-          <center><img src="workbench studio/leovs.jpg" title="Plave Jakne: Leonard VS Hina" style="width:90%"></center>
+          <img src="workbench studio/leovs.jpg" title="Plave Jakne: Leonard VS Hina" style="width:90%">
         </div>
       
         <!-- Next/previous controls -->
@@ -228,7 +228,7 @@
         <div class="caption-container">
           <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
         </div>
-    
+
       </div>
     </div>
     
@@ -260,19 +260,16 @@
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
 
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script>
   </body>
     

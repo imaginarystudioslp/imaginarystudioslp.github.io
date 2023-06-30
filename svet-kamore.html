@@ -42,6 +42,22 @@
       color:rgb(205, 0, 0);
     }
 
+    /* Table Properties */
+    table, th, td {
+      table-layout: fixed;
+      border: 1px solid #ffffff;
+      text-align: justify;
+    }
+    
+    th {
+      padding: 15px;
+    }
+
+    td {
+      padding: 15px;
+    }
+
+    /* Footer */
     #footer {
       position: fixed;
       bottom: 0px;
@@ -51,35 +67,30 @@
 
   <head>
 	  <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
-	  <link rel="stylesheet" type"text/css" href="assets/css/basic-white.css">
+	  <link rel="stylesheet" type="text/css" href="assets/css/basic-white.css">
 	  <title>Svet Kamore &#x2022; Imaginary Studios Workbench</title>
 	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
 
   <header>
-    <div id="topnav">
-      <a href="svet-kamore.html"><strong>IMAGINARY STUDIOS Workbench <img src="workbench studio/work-text.png" style="vertical-align: middle;"></strong></a>
-
-		  <div class="container">
-			  <p><b><img src="workbench studio/blank.png" style="vertical-align: middle;"> Note:</b> This is a test page for experimental scenarios.</p>
-		  </div>
-    </div>
+    <table style="width: 100%;"><tr>
+      <td style="width: 30%;"><p style="text-align:left; color: #484848;"><strong>IMAGINARY STUDIOS Workbench <img src="workbench studio/work-text.png" style="vertical-align: middle;"></strong></p></td>
+      <td style="width: 30%;"></td>
+      <td style="width: 40%;"><p style="text-align:right;"><b>Note:</b> This is a test page for experimental scenarios.</p></td>
+    </tr></table>
   </header>
-
 	<hr />
-
   <body>
     <p>&nbsp;&nbsp;&nbsp;<b>Svet Kamore [SRB]</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scenario i priča by Lazar P.</p>
     <hr />
+    <p>&nbsp;&nbsp;&nbsp; Četiri serijala u istom univerzumu:</p>
     <div class="row">
       <div class="column">
-        <p>&nbsp;&nbsp;&nbsp;Četiri serijala u istom univerzumu:</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📜 <a href="scenarios/bulevar.pdf#toolbar=0" class="glow"><b> Hodajuća opasnost - 1. epizoda (36 strana)</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📁 <a href="heroes-and-monsters.html" class="glow"><b> Heroes and Monsters - 2 epizode</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📁 <a href="serijal-plave-jakne.html" class="glow"><b> Plave jakne - 2 epizode</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📁 <a href="tim-zakrpa.html" class="glow"><b> Tim Zakrpa - 10 epizoda</b></a></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;📜 <a href="scenarios/bulevar.pdf#toolbar=0" class="glow"><b> Hodajuća opasnost - 1. epizoda (36 strana)</b></a></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;📁 <a href="heroes-and-monsters.html" class="glow"><b> Heroes and Monsters - 2 epizode</b></a></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;📁 <a href="serijal-plave-jakne.html" class="glow"><b> Plave jakne - 2 epizode</b></a></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;📁 <a href="tim-zakrpa.html" class="glow"><b> Tim Zakrpa - 10 epizoda</b></a></p>
       </div>
-
       <div class="column"></div>
     </div>
     <p>&nbsp;&nbsp;&nbsp; <b>Napomena:</b> Sve komentare i predloge slati na sledeću e-mail adresu: 📬 <a href = "mailto: imaginarystudioslp@gmail.com" class="glow"><b> imaginarystudioslp@gmail.com</b></a></p>  
@@ -90,9 +101,4 @@
     <p>ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
   </div>
 
-  <script>
-    jQuery.htmlPrefilter = function( html ) {
-      return html;
-    };
-  </script>
 </html>

@@ -131,9 +131,12 @@
       top: 0;
     }
 
+    /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
-      margin-left: 30px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .caption-container {
@@ -170,7 +173,7 @@
 
   <head>
     <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-white.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-white.css">
     <title>Tim Zakrpa &#x2022; Imaginary Studios Workbench</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -184,16 +187,14 @@
       </div>
     </div>
   </header>
-
   <hr />
-
   <body>
 
     <!-- Image used to open the lightbox -->
     <div class="row">
       <div class="column" style="width:30%">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Crteži</b></p>
-        <p><font color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Pritiskom na ikonicu pristupa se galeriji</i></font></p>
+        <p style="color:red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Pritiskom na ikonicu pristupa se galeriji</i></p>
         <img src="workbench studio/gallery.png" style="width: 30%; border-radius: 10%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
       
@@ -205,11 +206,11 @@
         <hr />
         <p><b>Epizode:</b></p>
         <hr />
-        <p>📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep1.pdf#toolbar=0" class="glow"><b> Epizoda 1 (20 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep6.pdf#toolbar=0" class="glow"><b> Epizoda 6 (20 strana)</b></a></p>
-        <p>📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep2.pdf#toolbar=0" class="glow"><b> Epizoda 2 (19 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep7.pdf#toolbar=0" class="glow"><b> Epizoda 7 (20 strana)</b></a></p>
-        <p>📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep3.pdf#toolbar=0" class="glow"><b> Epizoda 3 (20 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep8.pdf#toolbar=0" class="glow"><b> Epizoda 8 (21 strana)</b></a></p>
-        <p>📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep4.pdf#toolbar=0" class="glow"><b> Epizoda 4 (20 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep9.pdf#toolbar=0" class="glow"><b> Epizoda 9 (20 strana)</b></a></p>
-        <p>📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep5.pdf#toolbar=0" class="glow"><b> Epizoda 5 (20 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜 <a href="scenarios/tim zakrpa/Tim-Zakrpa-ep10.pdf#toolbar=0" class="glow"><b> Epizoda 10 (20 strana)</b></a></p>
+        <p>📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep1.pdf#toolbar=0" class="glow"><b> Epizoda 1 (20 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep6.pdf#toolbar=0" class="glow"><b> Epizoda 6 (20 strana)</b></a></p>
+        <p>📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep2.pdf#toolbar=0" class="glow"><b> Epizoda 2 (19 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep7.pdf#toolbar=0" class="glow"><b> Epizoda 7 (20 strana)</b></a></p>
+        <p>📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep3.pdf#toolbar=0" class="glow"><b> Epizoda 3 (20 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep8.pdf#toolbar=0" class="glow"><b> Epizoda 8 (21 strana)</b></a></p>
+        <p>📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep4.pdf#toolbar=0" class="glow"><b> Epizoda 4 (20 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep9.pdf#toolbar=0" class="glow"><b> Epizoda 9 (20 strana)</b></a></p>
+        <p>📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep5.pdf#toolbar=0" class="glow"><b> Epizoda 5 (20 strana)</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📜<a href="scenarios/tim zakrpa/Tim-Zakrpa-ep10.pdf#toolbar=0" class="glow"><b> Epizoda 10 (20 strana)</b></a></p>
       </div>
     </div>
     
@@ -220,12 +221,12 @@
     
         <div class="mySlides">
           <div class="numbertext">1 / 2</div>
-          <CENTER><img src="workbench studio/lilia.jpg" style="width:80%"></CENTER>
+          <img src="workbench studio/lilia.jpg" style="width:80%" title="Lilia by Valentina">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 2</div>
-          <CENTER><img src="workbench studio/rtg-group.jpg" style="width:90%"></CENTER>
+          <img src="workbench studio/rtg-group.jpg" style="width:90%" title="RagTag Team by Demon-49">
         </div>
       
         <!-- Next/previous controls -->
@@ -268,19 +269,16 @@
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
 
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script>
   </body>
     

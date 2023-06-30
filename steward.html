@@ -6,6 +6,7 @@
       background-color: white;
     }
 
+    /* Part of Footer for Modal Content */
     * {
       box-sizing: border-box;
     }
@@ -120,9 +121,12 @@
       top: 0;
     }
 
+    /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
-      margin-left: 30px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .caption-container {
@@ -158,7 +162,7 @@
 
   <head>
     <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-white.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-white.css">
     <title>Steward &#x2022; Imaginary Studios Workbench</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -180,7 +184,7 @@
     <div class="row">
       <div class="column" style="width:30%">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Image gallery</b></p>
-        <p><font color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Click on the image to enter the gallery view</i></font></p>
+        <p style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Click on the image to enter the gallery view</i></p>
         <img src="workbench studio/steward.jpg" style="width: 60%; border: 1px solid black;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
       
@@ -207,7 +211,7 @@
     
         <div class="mySlides">
           <div class="numbertext">1 / 1</div>
-          <CENTER><img src="workbench studio/steward.jpg" style="width:80%"></CENTER>
+          <img src="workbench studio/steward.jpg" style="width:80%">
         </div>
       
         <!-- Next/previous controls -->
@@ -259,10 +263,7 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
+      
     </script>
   </body>
     
