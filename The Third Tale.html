@@ -1,5 +1,6 @@
 <!-- Basic dark theme by ImaginaryStudiosLP team -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <style>
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -111,8 +112,12 @@
       top: 0;
     }
 
+    /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Footer for Modal Content */
@@ -153,7 +158,7 @@
 
   <head>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
     <title>The Third Tale</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -161,7 +166,7 @@
   <body>
     <!-- Navigation bar -->
     <div class="container">
-      &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="Tales of Aurora.html">Back</a></p>
+      &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="javascript:history.back()">Back</a></p>
     </div>  
     
     <!-- Image used to open the lightbox -->
@@ -175,58 +180,58 @@
           <div class="modal-content">
     
               <div class="mySlides">
-                  <div class="numbertext">1 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT001.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">1 / 11</div>
+                <img src="The Third Tale/TTT001.jpg" style="width:80%">
               </div>
     
               <div class="mySlides">
-                  <div class="numbertext">2 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT002.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">2 / 11</div>
+                <img src="The Third Tale/TTT002.jpg" style="width:80%">
               </div>
     
               <div class="mySlides">
-                  <div class="numbertext">3 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT003.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">3 / 11</div>
+                <img src="The Third Tale/TTT003.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">4 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT004.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">4 / 11</div>
+                <img src="The Third Tale/TTT004.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">5 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT005.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">5 / 11</div>
+                <img src="The Third Tale/TTT005.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext"> 6 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT006.jpg" style="width:80%"></CENTER>
+                <div class="numbertext"> 6 / 11</div>
+                <img src="The Third Tale/TTT006.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">7 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT007.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">7 / 11</div>
+                <img src="The Third Tale/TTT007.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">8 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT008.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">8 / 11</div>
+                <img src="The Third Tale/TTT008.jpg" style="width:80%">
               </div>
 
               <div class="mySlides">
-                  <div class="numbertext">9 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT009.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">9 / 11</div>
+                <img src="The Third Tale/TTT009.jpg" style="width:80%">
               </div>
 
               <div class="mySlides">
-                  <div class="numbertext">10 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT0010.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">10 / 11</div>
+                <img src="The Third Tale/TTT0010.jpg" style="width:80%">
               </div>
 
               <div class="mySlides">
-                  <div class="numbertext">11 / 11</div>
-                  <CENTER><img src="The Third Tale/TTT0011.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">11 / 11</div>
+                <img src="The Third Tale/TTT0011.jpg" style="width:80%">
               </div>
 
               <!-- Next/previous controls -->
@@ -243,6 +248,8 @@
       </div>
     
     <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
@@ -270,19 +277,16 @@
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
 
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script>
 
   </body>

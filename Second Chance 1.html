@@ -1,5 +1,6 @@
 <!-- Basic dark theme by ImaginaryStudiosLP team -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <style>
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -166,7 +167,7 @@
 	
     <!-- Navigation bar -->
     <div class="container">
-      &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="Second Chance.html">Back</a></p>
+      &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="javascript:history.back()">Back</a></p>
     </div>  
 
 	  <!-- Image used to open the lightbox -->
@@ -307,6 +308,8 @@
     </div>
   
     <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
@@ -334,10 +337,10 @@
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";

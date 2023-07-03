@@ -1,5 +1,6 @@
 <!-- Basic dark theme by ImaginaryStudiosLP team -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <style>
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -103,7 +104,10 @@
     
     /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Footer for Modal Content */
@@ -142,6 +146,12 @@
       color: #212a91;
     }
 
+    /* Invisible Links */
+    .invisible {
+      text-decoration: none;
+      color:#151515;
+    }
+
     /* Table Properties */
     table, th, td {
       border: 1px solid #151515;
@@ -167,7 +177,7 @@
 
   <head>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
     <title>Agents of MUB &#x2022; Imaginary Studios</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -176,7 +186,7 @@
     <div id="topnav">
       <table style="width: 100%;">
         <tr>
-          <td style="width: 20%;"><p style="text-align: left;"><a href="archives.html">Back</a></p></td>
+          <td style="width: 20%;"><p style="text-align: left;"><a href="javascript:history.back()">Back</a></p></td>
           <td style="width: 80%;"><p style="text-align: right;">
             <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -195,49 +205,49 @@
     <table style="width: 100%;">
       <tr>
         <td style="width: 30%;">
-          <p><b>Logo</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="easter-egg.html" class="glow"><font color ="#151515">paw</font></a></p>
+          <p><b>Logo</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="easter-egg.html" style="text-decoration: none;"><span class="invisible">paw</span></a></p>
           <p><img src="images/mub-logo.jpg" style="width: 30%; border-radius: 10%;"></p>
           <br></br>
           <p><b>Pictures of characters</b></p>
           <!-- Image used to open the lightbox -->
-          <p><i><font color="#b6b6b8">Click on the icon to enter the gallery view</font></i></p>
+          <p style="color: #b6b6b8;"><i>Click on the icon to enter the gallery view</i></p>
           <p><img src="images/gallery-dark.png" style="width: 30%; border-radius: 10%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></p>
         </td>
         <td style="width: 70%;">
-          <p><font color="#fafafa"><b>Agents of MUB</b></font></p>
-          <p><font color="#b6b6b8">⚔️ Episodic Adventure</font></p>
+          <p style="color: #fafafa;"><b>Agents of MUB</b></p>
+          <p style="color: #b6b6b8;">⚔️ Episodic Adventure</p>
           <hr />
-          <p><b>Genre(s):</b><font color="#b6b6b8"> Adventure, Comedy, Drama, Science Fiction</font></p>
-          <p><b>Writer(s):</b><font color="#b6b6b8"> Lazar P. (Comic Tyrant)</font></p>
-          <p><b>Artist(s):</b><font color="#b6b6b8"> V13</font></p>
-          <p><b>Publisher:</b><font color="#b6b6b8"> Imaginary Studios</font></p>
-          <p><b>Date of publication:</b><font color="#b6b6b8"> February 4, 2023</font></p>
+          <p style="color: #b6b6b8;"><b>Genre(s):</b> Adventure, Comedy, Drama, Science Fiction</p>
+          <p style="color: #b6b6b8;"><b>Writer(s):</b> Lazar P. (Comic Tyrant)</p>
+          <p style="color: #b6b6b8;"><b>Artist(s):</b> V13</p>
+          <p style="color: #b6b6b8;"><b>Publisher:</b> Imaginary Studios</p>
+          <p style="color: #b6b6b8;"><b>Date of publication:</b> February 4, 2023</p>
           <hr />
           <p><b>Summary:</b></p>
-          <p><font color="#b6b6b8">
+          <p style="color: #b6b6b8;">
             When monsters known as the Wick take over the world, a group of fighters from around the world comes together to form 
             a rogue group to fight for freedom.
-          </font></p>
-          <hr />
-          <p><font color="#b6b6b8">If you want to be updated regularly, visit the following link: <a href="https://www.instagram.com/agents_of_mub/" class="glow">📷 Agents of MUB on Instagram</a>.</font></p>
-          <hr />
-          <p><font color="#b6b6b8">To learn more about characters from these stories, you can visit <a href="characters.html" class="glow">👾 Characters</a> page.</font></p>
-          <hr />
-          <p><font color="#b6b6b8">You can visit the following links to support creators:</font></p>
-          <p>
-            <a href="https://www.deviantart.com/comictyrant" class="glow">🎨 ComicTyrant on DeviantArt</a></b>
           </p>
           <hr />
-          <p><font color="#b6b6b8">MUB logo is generated with the help of <a href="https://midjourney.com/" class="glow">🦾 Midjourney</a> AI.</font></p>
+          <p style="color: #b6b6b8;">If you want to be updated regularly, visit the following link: <a href="https://www.instagram.com/agents_of_mub/" class="glow">📷 Agents of MUB on Instagram</a>.</p>
+          <hr />
+          <p style="color: #b6b6b8;">To learn more about characters from these stories, you can visit <a href="characters.html" class="glow">👾 Characters</a> page.</p>
+          <hr />
+          <p style="color: #b6b6b8;">You can visit the following links to support creators:</p>
+          <p><a href="https://www.deviantart.com/comictyrant" class="glow">🎨 ComicTyrant on DeviantArt</a></b></p>
+          <hr />
+          <p style="color: #b6b6b8;">💬 You can send all comments and suggestions to the following <a href = "mailto: imaginarystudioslp@gmail.com" class="glow">email address</a>.</p>
+          <hr />
+          <p style="color: #b6b6b8;">MUB logo is generated with the help of <a href="https://midjourney.com/" class="glow">🦾 Midjourney</a> AI.</p>
           <hr />
           <p><b>Table of Contents:</b></p>
           <p>Chapter 1 - Beginning of The Invasion</p>
-          <p><font color="#b6b6b8">&#x2022;<a href="Agents of MUB - Kaze.html" class="glow"> Agents of MUB - Kaze</a></font></p>
-          <p><font color="#b6b6b8">&#x2022;<a href="Agents of MUB - Kim.html" class="glow"> Agents of MUB - Kim</a></font></p>
-          <p><font color="#b6b6b8">&#x2022;<a href="Agents of MUB - DesertFox.html" class="glow"> Agents of MUB - DesertFox</a></font></p>
+          <p style="color: #b6b6b8;">&#x2022;<a href="Agents of MUB - Kaze.html" class="glow"> Agents of MUB - Kaze</a></p>
+          <p style="color: #b6b6b8;">&#x2022;<a href="Agents of MUB - Kim.html" class="glow"> Agents of MUB - Kim</a></p>
+          <p style="color: #b6b6b8;">&#x2022;<a href="Agents of MUB - DesertFox.html" class="glow"> Agents of MUB - DesertFox</a></p>
           <hr />
-          <p><b>⚠️ Note:</b><font color="#b6b6b8"> To read click on these links, and then to access the reading mode just click on the cover image.</font></p>
-          <p><font color="#b6b6b8">Episodes from the Chapter 1 - Beginning of The Invasion can be read in any order.</font></p>
+          <p style="color: #b6b6b8;"><b>⚠️ Note:</b> To read click on these links, and then to access the reading mode just click on the cover image.</p>
+          <p style="color: #b6b6b8;">Episodes from the Chapter 1 - Beginning of The Invasion can be read in any order.</p>
         </td>
       </tr>
     </table>
@@ -247,48 +257,53 @@
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
         <div class="mySlides">
+          <div class="numbertext">0 / 11</div>
+          <img src="images/mub-logo.jpg" title="Agents of MUB Official Logo" style="width:70%">
+        </div>
+
+        <div class="mySlides">
           <div class="numbertext">1 / 11</div>
-          <CENTER><img src="images/ogkaze.jpg" title="Kaze" style="width:50%"></CENTER>
+          <img src="images/ogkaze.jpg" title="Kaze" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">2 / 11</div>
-          <CENTER><img src="images/ogkim.jpg" title="Kim" style="width:50%"></CENTER>
+          <img src="images/ogkim.jpg" title="Kim" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">3 / 11</div>
-          <CENTER><img src="images/ogjudge.jpg" title="Judge" style="width:50%"></CENTER>
+          <img src="images/ogjudge.jpg" title="Judge" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">4 / 11</div>
-          <CENTER><img src="images/ogtyrant.jpg" title="Oldor, CosmicTyrant" style="width:50%"></CENTER>
+          <img src="images/ogtyrant.jpg" title="Oldor, CosmicTyrant" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">5 / 11</div>
-          <CENTER><img src="images/ogdemon.jpg" title="Demonwolf" style="width:50%"></CENTER>
+          <img src="images/ogdemon.jpg" title="Demonwolf" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">6 / 11</div>
-          <CENTER><img src="images/ogfox.jpg" title="George, DesertFox" style="width:50%"></CENTER>
+          <img src="images/ogfox.jpg" title="George, DesertFox" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">7 / 11</div>
-          <CENTER><img src="images/oggrim.jpg" title="Grim" style="width:50%"></CENTER>
+          <img src="images/oggrim.jpg" title="Grim" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">8 / 11</div>
-          <CENTER><img src="images/ogobsidian.jpeg" title="Obsidian" style="width:50%"></CENTER>
+          <img src="images/ogobsidian.jpeg" title="Obsidian" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">9 / 11</div>
-          <CENTER><img src="images/ognexus.jpeg" title="SupremeNexus" style="width:80%"></CENTER>
+          <img src="images/ognexus.jpeg" title="SupremeNexus" style="width:80%">
         </div>
         <div class="mySlides">
           <div class="numbertext">10 / 11</div>
-          <CENTER><img src="images/ogkrillox.jpg" title="Krillox" style="width:50%"></CENTER>
+          <img src="images/ogkrillox.jpg" title="Krillox" style="width:50%">
         </div>
         <div class="mySlides">
           <div class="numbertext">11 / 11</div>
-          <CENTER><img src="images/ogheiw.jpg" title="Heiw" style="width:50%"></CENTER>
+          <img src="images/ogheiw.jpg" title="Heiw" style="width:50%">
         </div>
             
         <!-- Next/previous controls -->
@@ -303,6 +318,8 @@
     </div>
     
     <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
@@ -340,9 +357,6 @@
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
 
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script> 
   </body>
 
@@ -353,7 +367,7 @@
         <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
       </p></td></tr>
-      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+      <tr><td><p style="text-align: center; color: #b6b6b8;">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p></td></tr>
     </table>
   </div>
 </html>

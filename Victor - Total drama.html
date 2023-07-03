@@ -1,5 +1,6 @@
 <!-- Basic dark theme by ImaginaryStudiosLP team -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <style>
      body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -103,7 +104,10 @@
     
     /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Footer for Modal Content */
@@ -142,6 +146,12 @@
       color: #212a91;
     }
 
+    /* Invisible Links */
+    .invisible {
+      text-decoration: none;
+      color:#151515;
+    }
+
     /* Table Properties */
     table, th, td {
       border: 1px solid #151515;
@@ -167,7 +177,7 @@
 
   <head>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
     <title>Victor &#x2022; Imaginary Studios</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -176,7 +186,7 @@
     <div id="topnav">
       <table style="width: 100%;">
         <tr>
-          <td style="width: 20%;"><p style="text-align: left;"><a href="archives.html">Back</a></p></td>
+          <td style="width: 20%;"><p style="text-align: left;"><a href="javascript:history.back()">Back</a></p></td>
           <td style="width: 80%;"><p style="text-align: right;">
             <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -197,29 +207,32 @@
         <td style="width: 30%;">
           <p><b>Reading pane</b></p>
           <!-- Image used to open the lightbox -->
-          <p><i><font color="#b6b6b8">Click on the image to access the reading mode</font></i></p>
+          <p style="color: #b6b6b8;"><i>Click on the image to access the reading mode</i></p>
           <p><img src="images/victor-cover.png" style="width: 220px; height: 300px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></p>
         </td>
         <td style="width: 70%;">
-          <p><font color="#fafafa"><b>Victor - Total drama</b></font></p>
-          <p><font color="#b6b6b8">💢 Short comic</font></p>
+          <p style="color: #fafafa;"><b>Victor - Total drama</b></p>
+          <p style="color: #b6b6b8;">💢 Short comic</p>
           <hr />
-          <p><b>Genre(s):</b><font color="#b6b6b8"> Crime and mystery</font></p>
-          <p><b>Writer(s):</b><font color="#b6b6b8"> Lazar P. (Comic Tyrant)</font></p>
-          <p><b>Artist(s):</b><font color="#b6b6b8"> Mortyn</font></p>
-          <p><b>Publisher:</b><font color="#b6b6b8"> Imaginary Studios</font></p>
-          <p><b>Date of publication:</b><font color="#b6b6b8"> December 15, 2018</font></p>
+          <p style="color: #b6b6b8;"><b>Genre(s):</b> Crime and mystery</p>
+          <p style="color: #b6b6b8;"><b>Writer(s):</b> Lazar P. (Comic Tyrant)</p>
+          <p style="color: #b6b6b8;"><b>Artist(s):</b> Mortyn</p>
+          <p style="color: #b6b6b8;"><b>Publisher:</b> Imaginary Studios</p>
+          <p style="color: #b6b6b8;"><b>Date of publication:</b> December 15, 2018</p>
           <hr />
           <p><b>Summary:</b></p>
-          <p><font color="#b6b6b8">A hacker falsely accused of cyber attack works with a private detective to prove his innocence.</font></p>
+          <p style="color: #b6b6b8;">A hacker falsely accused of cyber attack works with a private detective to prove his innocence.</p>
           <hr />
-          <p><font color="#b6b6b8">To learn more about characters from these stories, you can visit <a href="characters.html" class="glow">👾 Characters</a> page.</font></p>
+          <p style="color: #b6b6b8;">To learn more about characters from these stories, you can visit <a href="characters.html" class="glow">👾 Characters</a> page.</p>
           <hr />
-          <p><font color="#b6b6b8">You can visit the following links to support creators:</font></p>
+          <p style="color: #b6b6b8;">You can visit the following links to support creators:</p>
           <p>
             <a href="https://www.deviantart.com/mortyn" class="glow">🎨 Mortyn on DeviantArt</a>&nbsp;&nbsp;&nbsp;
-	          <a href="https://www.deviantart.com/comictyrant" class="glow">🎨 ComicTyrant on DeviantArt</a>
+	          <a href="https://www.deviantart.com/comictyrant" class="glow">🎨 ComicTyrant on DeviantArt</a>&nbsp;&nbsp;&nbsp;
+            <a href="easter-egg.html" style="text-decoration: none;"><span class="invisible">koneko</span></a>
           </p>
+          <hr />
+          <p style="color: #b6b6b8;">💬 You can send all comments and suggestions to the following <a href = "mailto: imaginarystudioslp@gmail.com" class="glow">email address</a>.</p>
         </td>
       </tr>
     </table>
@@ -230,47 +243,47 @@
       <div class="modal-content">
         <div class="mySlides">
           <div class="numbertext">0 / 8</div>
-          <CENTER><img src="Victor - Total drama/000.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/000.png" style="width:60%">
         </div>
           
         <div class="mySlides">
           <div class="numbertext">1 / 8</div>
-          <CENTER><img src="Victor - Total drama/001.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/001.png" style="width:60%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 8</div>
-          <CENTER><img src="Victor - Total drama/002.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/002.png" style="width:60%">
         </div>
         
         <div class="mySlides">
           <div class="numbertext">3 / 8</div>
-          <CENTER><img src="Victor - Total drama/003.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/003.png" style="width:60%">
         </div>
       
         <div class="mySlides">
           <div class="numbertext">4 / 8</div>
-          <CENTER><img src="Victor - Total drama/004.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/004.png" style="width:60%">
         </div>
       
         <div class="mySlides">
           <div class="numbertext">5 / 8</div>
-          <CENTER><img src="Victor - Total drama/005.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/005.png" style="width:60%">
         </div>
       
         <div class="mySlides">
           <div class="numbertext">6 / 8</div>
-          <CENTER><img src="Victor - Total drama/006.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/006.png" style="width:60%">
         </div>
       
         <div class="mySlides">
           <div class="numbertext">7 / 8</div>
-          <CENTER><img src="Victor - Total drama/007.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/007.png" style="width:60%">
         </div>
       
         <div class="mySlides">
           <div class="numbertext">8 / 8</div>
-          <CENTER><img src="Victor - Total drama/008.png" style="width:60%"></CENTER>
+          <img src="Victor - Total drama/008.png" style="width:60%">
         </div>
 
         <!-- Next/previous controls -->
@@ -285,6 +298,8 @@
     </div>
     
     <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
@@ -320,10 +335,6 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script> 
   </body>
   
@@ -334,7 +345,7 @@
         <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
       </p></td></tr>
-      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+      <tr><td><p style="text-align: center; color: #b6b6b8;">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p></td></tr>
     </table>
   </div>
 </html>

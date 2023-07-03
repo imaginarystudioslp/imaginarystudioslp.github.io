@@ -1,5 +1,6 @@
 <!-- Basic dark theme by ImaginaryStudiosLP team -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <style>
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -111,8 +112,12 @@
       top: 0;
     }
 
+    /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Footer for Modal Content */
@@ -153,7 +158,7 @@
 
   <head>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
     <title>Agents of MUB • Kaze</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -161,7 +166,7 @@
   <body>
     <!-- Navigation bar -->
     <div class="container">
-      &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="Agents of MUB.html">Back</a></p>
+      &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="javascript:history.back()">Back</a></p>
     </div>  
     
     <!-- Image used to open the lightbox -->
@@ -175,67 +180,67 @@
           <div class="modal-content">
     
               <div class="mySlides">
-                  <div class="numbertext">1 / 13</div>
-                  <CENTER><img src="AOM - Kaze/aomk01.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">1 / 13</div>
+                <img src="AOM - Kaze/aomk01.jpg" style="width:80%">
               </div>
     
               <div class="mySlides">
-                  <div class="numbertext">2 / 13</div>
-                  <CENTER><img src="AOM - Kaze/aomk02.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">2 / 13</div>
+                <img src="AOM - Kaze/aomk02.jpg" style="width:80%">
               </div>
     
               <div class="mySlides">
-                  <div class="numbertext">3 / 13</div>
-                  <CENTER><img src="AOM - Kaze/aomk03.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">3 / 13</div>
+                <img src="AOM - Kaze/aomk03.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">4 / 13</div>
-                  <CENTER><img src="AOM - Kaze/aomk04.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">4 / 13</div>
+                <img src="AOM - Kaze/aomk04.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">5 / 13</div>
-                  <CENTER><img src="AOM - Kaze/aomk05.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">5 / 13</div>
+                <img src="AOM - Kaze/aomk05.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">6 / 13</div>
-                  <CENTER><img src="AOM - Kaze/aomk06.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">6 / 13</div>
+                <img src="AOM - Kaze/aomk06.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">7 / 13</div>
-                  <CENTER><img src="AOM - Kaze/aomk07.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">7 / 13</div>
+                <img src="AOM - Kaze/aomk07.jpg" style="width:80%">
               </div>
         
               <div class="mySlides">
-                  <div class="numbertext">8 / 13</div>
-                  <CENTER><img src="AOM - Kaze/aomk08.jpg" style="width:80%"></CENTER>
+                <div class="numbertext">8 / 13</div>
+                <img src="AOM - Kaze/aomk08.jpg" style="width:80%">
               </div>
 
               <div class="mySlides">
                 <div class="numbertext">9 / 13</div>
-                <CENTER><img src="AOM - Kaze/aomk09.jpg" style="width:80%"></CENTER>
+                <img src="AOM - Kaze/aomk09.jpg" style="width:80%">
               </div>
 
               <div class="mySlides">
                 <div class="numbertext">10 / 13</div>
-                <CENTER><img src="AOM - Kaze/aomk10.jpg" style="width:80%"></CENTER>
+                <img src="AOM - Kaze/aomk10.jpg" style="width:80%">
               </div>
 
               <div class="mySlides">
                 <div class="numbertext">11 / 13</div>
-                <CENTER><img src="AOM - Kaze/aomk11.jpg" style="width:80%"></CENTER>
+                <img src="AOM - Kaze/aomk11.jpg" style="width:80%">
               </div>
 
               <div class="mySlides">
                 <div class="numbertext">12 / 13</div>
-                <CENTER><img src="AOM - Kaze/aomk12.jpg" style="width:80%"></CENTER>
+                <img src="AOM - Kaze/aomk12.jpg" style="width:80%">
               </div>
               <div class="mySlides">
                 <div class="numbertext">13 / 13</div>
-                <CENTER><img src="AOM - Kaze/aomk13.jpg" style="width:80%"></CENTER>
+                <img src="AOM - Kaze/aomk13.jpg" style="width:80%">
               </div>
 
               <!-- Next/previous controls -->
@@ -252,6 +257,8 @@
       </div>
     
     <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+      
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
@@ -289,9 +296,6 @@
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
 
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script>
 
   </body>

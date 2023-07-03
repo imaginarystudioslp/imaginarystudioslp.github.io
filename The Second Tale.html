@@ -1,5 +1,6 @@
 <!-- Basic dark theme by ImaginaryStudiosLP team -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <style>
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -111,8 +112,12 @@
       top: 0;
     }
 
+    /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Footer for Modal Content */
@@ -153,126 +158,122 @@
 
   <head>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
     <title>The Second Tale</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
 
   <body>
     <!-- Navigation bar -->
-    <div class="container">
-      &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="Tales of Aurora.html">Back</a></p>
-    </div>  
+    <div class="container">&nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="javascript:history.back()">Back</a></p></div>  
     
     <!-- Image used to open the lightbox -->
-      <span class="img-container">
-          <img src="images/tales-main.jpg" style="width: 35%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-      </span> 
+    <span class="img-container"><img src="images/tales-main.jpg" style="width: 35%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></span> 
 
-      <!-- The Modal/ Lightbox -->
-      <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
+    <!-- The Modal/ Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
     
-              <div class="mySlides">
-                  <div class="numbertext">1 / 17</div>
-                  <CENTER><img src="The Second Tale/TST001.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">1 / 17</div>
+          <img src="The Second Tale/TST001.jpg" style="width:80%">
+        </div>
     
-              <div class="mySlides">
-                  <div class="numbertext">2 / 17</div>
-                  <CENTER><img src="The Second Tale/TST002.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 17</div>
+          <img src="The Second Tale/TST002.jpg" style="width:80%">
+        </div>
     
-              <div class="mySlides">
-                  <div class="numbertext">3 / 17</div>
-                  <CENTER><img src="The Second Tale/TST003.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 17</div>
+          <img src="The Second Tale/TST003.jpg" style="width:80%">
+        </div>
         
-              <div class="mySlides">
-                  <div class="numbertext">4 / 17</div>
-                  <CENTER><img src="The Second Tale/TST004.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 17</div>
+          <img src="The Second Tale/TST004.jpg" style="width:80%">
+        </div>
         
-              <div class="mySlides">
-                  <div class="numbertext">5 / 17</div>
-                  <CENTER><img src="The Second Tale/TST005.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 17</div>
+          <img src="The Second Tale/TST005.jpg" style="width:80%">
+        </div>
         
-              <div class="mySlides">
-                  <div class="numbertext"> 6 / 17</div>
-                  <CENTER><img src="The Second Tale/TST006.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext"> 6 / 17</div>
+          <img src="The Second Tale/TST006.jpg" style="width:80%">
+        </div>
         
-              <div class="mySlides">
-                  <div class="numbertext">7 / 17</div>
-                  <CENTER><img src="The Second Tale/TST007.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 17</div>
+          <img src="The Second Tale/TST007.jpg" style="width:80%">
+        </div>
         
-              <div class="mySlides">
-                  <div class="numbertext">8 / 17</div>
-                  <CENTER><img src="The Second Tale/TST008.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">8 / 17</div>
+          <img src="The Second Tale/TST008.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">9 / 17</div>
-                  <CENTER><img src="The Second Tale/TST009.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">9 / 17</div>
+          <img src="The Second Tale/TST009.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">10 / 17</div>
-                  <CENTER><img src="The Second Tale/TST0010.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">10 / 17</div>
+          <img src="The Second Tale/TST0010.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">11 / 17</div>
-                  <CENTER><img src="The Second Tale/TST0011.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">11 / 17</div>
+          <img src="The Second Tale/TST0011.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">12 / 17</div>
-                  <CENTER><img src="The Second Tale/TST0012.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">12 / 17</div>
+          <img src="The Second Tale/TST0012.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">13 / 17</div>
-                  <CENTER><img src="The Second Tale/TST0013.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">13 / 17</div>
+          <img src="The Second Tale/TST0013.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">14 / 17</div>
-                  <CENTER><img src="The Second Tale/TST0014.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">14 / 17</div>
+          <img src="The Second Tale/TST0014.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">15 / 17</div>
-                  <CENTER><img src="The Second Tale/TST0015.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">15 / 17</div>
+          <img src="The Second Tale/TST0015.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">16 / 17</div>
-                  <CENTER><img src="The Second Tale/TST0016.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">16 / 17</div>
+          <img src="The Second Tale/TST0016.jpg" style="width:80%">
+        </div>
 
-              <div class="mySlides">
-                  <div class="numbertext">17 / 17</div>
-                  <CENTER><img src="The Second Tale/TST0017.jpg" style="width:80%"></CENTER>
-              </div>
+        <div class="mySlides">
+          <div class="numbertext">17 / 17</div>
+          <img src="The Second Tale/TST0017.jpg" style="width:80%">
+        </div>
         
-              <!-- Next/previous controls -->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     
-              <!-- Caption text -->
-              <div class="caption-container">
-                  <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
-              </div>
-
-          </div>
-
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+        </div>
       </div>
+    </div>
     
     <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
@@ -300,20 +301,15 @@
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script>
-
   </body>
 </html>

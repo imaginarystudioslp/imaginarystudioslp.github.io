@@ -1,5 +1,6 @@
 <!-- Basic dark theme by ImaginaryStudiosLP team -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <style>
     body {
       font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -103,7 +104,10 @@
     
     /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Footer for Modal Content */
@@ -142,6 +146,12 @@
       color: #212a91;
     }
 
+    /* Invisible Links */
+    .invisible {
+      text-decoration: none;
+      color:#151515;
+    }
+
     /* Table Properties */
     table, th, td {
       border: 1px solid #151515;
@@ -167,7 +177,7 @@
 
   <head>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
     <title>One Shot &#x2022; Imaginary Studios</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -176,7 +186,7 @@
     <div id="topnav">
       <table style="width: 100%;">
         <tr>
-          <td style="width: 20%;"><p style="text-align: left;"><a href="archives.html">Back</a></p></td>
+          <td style="width: 20%;"><p style="text-align: left;"><a href="javascript:history.back()">Back</a></p></td>
           <td style="width: 80%;"><p style="text-align: right;">
             <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -197,28 +207,27 @@
         <td style="width: 30%;">
           <p><b>Reading pane</b></p>
           <!-- Image used to open the lightbox -->
-          <p><i><font color="#b6b6b8">Click on the image to access the reading mode</font></i></p>
+          <p style="color: #b6b6b8;"><i>Click on the image to access the reading mode</i></p>
           <p><img src="images/oneshot-cover.jpeg" style="width: 220px; height: 300px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></p>
         </td>
         <td style="width: 70%;">
-          <p><font color="#fafafa"><b>One Shot</b></font></p>
-          <p><font color="#b6b6b8">💢 Short comic</font></p>
+          <p style="color: #fafafa;"><b>One Shot</b></p>
+          <p style="color: #b6b6b8;">💢 Short comic</p>
           <hr />
-          <p><b>Genre(s):</b><font color="#b6b6b8"> Teaser</font></p>
-          <p><b>Writer(s):</b><font color="#b6b6b8"> Lazar P. (Comic Tyrant)</font></p>
-          <p><b>Artist(s):</b><font color="#b6b6b8"> GingerFay</font></p>
-          <p><b>Publisher:</b><font color="#b6b6b8"> Imaginary Studios</font></p>
-          <p><b>Date of publication:</b><font color="#b6b6b8"> August 7, 2020</font></p>
+          <p style="color: #b6b6b8;"><b>Genre(s):</b> Teaser</p>
+          <p style="color: #b6b6b8;"><b>Writer(s):</b> Lazar P. (Comic Tyrant)</p>
+          <p style="color: #b6b6b8;"><b>Artist(s):</b> GingerFay</p>
+          <p style="color: #b6b6b8;"><b>Publisher:</b> Imaginary Studios</p>
+          <p style="color: #b6b6b8;"><b>Date of publication:</b> August 7, 2020</p>
           <hr />
-          <p><font color="#b6b6b8">You can visit the following links to support creators:</font></p>
+          <p style="color: #b6b6b8;">You can visit the following links to support creators:</p>
           <p>
             <a href="https://www.deviantart.com/gingerfay" class="glow">🎨 GingerFay on DeviantArt</a>&nbsp;&nbsp;&nbsp;
 						<a href="https://www.deviantart.com/comictyrant" class="glow">🎨 ComicTyrant on DeviantArt</a>
           </p>
           <hr />
-          <br></br>
-          <br></br>
-          <br></br>
+          <p style="color: #b6b6b8;">💬 You can send all comments and suggestions to the following <a href = "mailto: imaginarystudioslp@gmail.com" class="glow">email address</a>.</p>
+          <p><a href="easter-egg.html" style="text-decoration: none;"><span class="invisible">neko</span></a></p>
         </td>
       </tr>
     </table>
@@ -229,7 +238,7 @@
         <div class="modal-content">
           <div class="mySlides">
             <div class="numbertext">1 / 1</div>
-            <CENTER><img src="One Shot/one-shot-0.jpeg" style="width:70%"></CENTER>
+            <img src="One Shot/one-shot-0.jpeg" style="width:70%">
           </div>
             
           <!-- Next/previous controls -->
@@ -243,23 +252,25 @@
         </div>
     </div>
     <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+
       function openModal() {
-          document.getElementById('myModal').style.display = "block";
+        document.getElementById('myModal').style.display = "block";
       }
       
       function closeModal() {
-          document.getElementById('myModal').style.display = "none";
+        document.getElementById('myModal').style.display = "none";
       }
       
       var slideIndex = 1;
       showSlides(slideIndex);
       
       function plusSlides(n) {
-          showSlides(slideIndex += n);
+        showSlides(slideIndex += n);
       }
       
       function currentSlide(n) {
-          showSlides(slideIndex = n);
+        showSlides(slideIndex = n);
       }
       
       function showSlides(n) {
@@ -279,10 +290,6 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script>
   </body>
   
@@ -293,7 +300,7 @@
         <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
       </p></td></tr>
-      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+      <tr><td><p style="text-align: center; color: #b6b6b8;">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p></td></tr>
     </table>
   </div>
 </html>
