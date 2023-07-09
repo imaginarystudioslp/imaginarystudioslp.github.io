@@ -104,7 +104,10 @@
     
     /* Image Properties */
     img {
+      display: block;
       margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Footer for Modal Content */
@@ -168,7 +171,7 @@
 
   <head>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type"text/css" href="assets/css/basic-dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
     <title>Kaze &#x2022; Imaginary Studios</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
@@ -177,7 +180,7 @@
     <div id="topnav">
       <table style="width: 100%;">
         <tr>
-          <td style="width: 20%;"><p style="text-align: left;"><a href="characters.html">Back</a></p></td>
+          <td style="width: 20%;"><p style="text-align: left;"><a href="javascript:history.back()">Back</a></p></td>
           <td style="width: 80%;"><p style="text-align: right;">
             <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -198,35 +201,37 @@
         <td style="width: 30%;">
           <p><b>Image gallery</b></p>
           <!-- Image used to open the lightbox -->
-          <p><i><font color="#b6b6b8">Click on the icon to enter the gallery view</font></i></p>
-          <p><img src="images/gallery-dark.png" style="width: 30%; border-radius: 10%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></p>
+          <p style="color: #b6b6b8;"><i>Click on the icon to enter the gallery view</i></p>
+          <p style="color: #b6b6b8;"><img src="images/gallery-dark.png" style="width: 30%; border-radius: 10%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></p>
           <br></br>
           <p><b>Quick link to the story</b></p>
-          <p><i><font color="#b6b6b8">Click on the logo to see this character in a new exciting adventure!</font></i></p>
+          <p style="color: #b6b6b8;"><i>Click on the logo to see this character in a new exciting adventure!</i></p>
           <p><a href="Agents of MUB.html" class="glow"><img src="images/mub-logo.jpg" style="width: 30%; border-radius: 10%;" class="hover-shadow cursor"></a></p>
         </td>
         <td style="width: 70%;">
-          <p><font color="#fafafa"><b>Kaze</b></font></p>
-          <p><font color="#b6b6b8">Created by ComicTyrant, drawn by V13</font></p>
+          <p style="color: #fafafa;"><b>Kaze</b></p>
+          <p style="color: #b6b6b8;">Created by ComicTyrant, drawn by V13</p>
           <hr />
           <p><b>Properties:</b></p>
-          <p><font color="#b6b6b8"><b>&#x2022; Real name:</b> Kaze</font></p>
-          <p><font color="#b6b6b8"><b>&#x2022; Type:</b> Werewolf</font></p>
-          <p><font color="#b6b6b8"><b>&#x2022; Gender:</b> Male</font></p>
-          <p><font color="#b6b6b8"><b>&#x2022; Allegiance:</b> MUB</font></p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Real name:</b> Kaze</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Type:</b> Werewolf</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Gender:</b> Male</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Allegiance:</b> MUB</p>
           <hr />
           <p><b>Story:</b></p>
-          <p></p><font color="#b6b6b8">
+          <p style="color: #b6b6b8;">
             Kaze started the MUB initiative, wanting to cleanse the world of the paranormal monsters that started to occupy it. 
             He soon realized that he couldn't do it alone, so he started to gather people around him. 
             They say he became a werewolf the same night the pagan monsters known as The Wicks came to earth. (Coincidence or not? Kaze doesn't know either!)
             As for his personality, he tries to react to everything with a cheesy joke but panics too much in dangerous situations. 
             He is first one to jump into a fight, never admits that is in the wrong and would give anything to protect those he loves. 
-          </font></p>
+          </p>
           <hr />
-          <p><font color="#b6b6b8">If you want to be updated about this character regularly, visit the following link: <a href="https://www.instagram.com/agents_of_mub/" class="glow">📷 Agents of MUB on Instagram</a>.</font></p>
+          <p style="color: #b6b6b8;">💬 You can send all comments and suggestions to the following <a href = "mailto: imaginarystudioslp@gmail.com" class="glow">email address</a>.</p>
           <hr />
-          <p><font color="#b6b6b8">MUB logo is generated with the help of <a href="https://midjourney.com/" class="glow">🦾 Midjourney</a> AI.</font></p>
+          <p style="color: #b6b6b8;">If you want to be updated about this character regularly, visit the following link: <a href="https://www.instagram.com/agents_of_mub/" class="glow">📷 Agents of MUB on Instagram</a>.</p>
+          <hr />
+          <p style="color: #b6b6b8;">MUB logo is generated with the help of <a href="https://midjourney.com/" class="glow">🦾 Midjourney</a> AI.</p>
         </td>
       </tr>
     </table>
@@ -237,7 +242,7 @@
       <div class="modal-content">
         <div class="mySlides">
           <div class="numbertext">1 / 1</div>
-          <CENTER><img src="images/ogkaze.jpg" style="width:50%;"></CENTER>
+          <img src="images/ogkaze.jpg" style="width:50%;" title="Kaze by V13">
         </div>
             
         <!-- Next/previous controls -->
@@ -252,6 +257,8 @@
     </div>
     
     <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
@@ -288,10 +295,6 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
-      jQuery.htmlPrefilter = function( html ) {
-        return html;
-      };
     </script> 
   </body>
   
@@ -302,7 +305,7 @@
         <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
       </p></td></tr>
-      <tr><td><p style="text-align: center;"><font color ="#b6b6b8">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</font></p></td></tr>
+      <tr><td><p style="text-align: center; color: #b6b6b8;">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p></td></tr>
     </table>
   </div>
 </html>
