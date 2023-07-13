@@ -6,29 +6,29 @@
       background-color: white;
     }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
-    /* a Two Column Layout */
     * {
       box-sizing: border-box;
     }
 
-    /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 5px;
+    .row > .column {
+      padding: 10px 10px;
     }
 
-    /* Clear floats after the columns */
     .row:after {
       content: "";
       display: table;
       clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
     }
 
     /* Glowing Links */
@@ -42,6 +42,127 @@
       color:rgb(205, 0, 0);
     }
 
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #ebe8e8;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 70px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgb(166, 166, 166);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Image Properties */
+    img {
+      display: block;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    img.hover-shadow {
+      transition: 1.3s;
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 0 16px rgb(204, 0, 0);
+    }
+
     /* Footer */
     #footer {
       position: fixed;
@@ -51,42 +172,110 @@
   </style>
 
   <head>
-	  <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
-	  <link rel="stylesheet" type="text/css" href="assets/css/basic-white.css">
-	  <title>Horokos and Professor &#x2022; Imaginary Studios Workbench</title>
-	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+    <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-white.css">
+    <title>Horokos and Professor &#x2022; Imaginary Studios Workbench</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
 
   <header>
     <div id="topnav">
       <a href="imaginaryverse.html"><strong>Back</strong></a>
 
-		  <div class="container">
-			  <p><b>Note:</b> This is a test page for experimental scenarios.</p>
-		  </div>
+      <div class="container">
+        <p><b>Note:</b> This is a test page for experimental scenarios.</p>
+      </div>
     </div>
   </header>
-
-	<hr />
-
+  <hr />
   <body>
-    <p>&nbsp;&nbsp;&nbsp;<b> Horokos and Professor </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Script and story by ComicTyrant and George Ive</p>
-    <hr />
+    <!-- Image used to open the lightbox -->
     <div class="row">
-      <div class="column">
-        <p>&nbsp;&nbsp;&nbsp; Three episodes (3 pdf files)</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📜 <a href="scenarios/horokos and professor/H&P 1.pdf#toolbar=0" class="glow"><b> Episode 1 - Under the full moon (12 pages)</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📜 <a href="scenarios/horokos and professor/H&P 2.pdf#toolbar=0" class="glow"><b> Episode 2 - Into the Ghost Unit (19 pages)</b></a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📜 <a href="scenarios/horokos and professor/H&P 3.pdf#toolbar=0" class="glow"><b> Episode 3 - Magical love (15 pages)</b></a></p>
+      <div class="column" style="width:30%">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Image gallery</b></p>
+        <p style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Click on the image to enter the gallery view</i></p>
+        <img src="workbench studio/gallery.png" style="width: 30%; border-radius: 10%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
+      
+      <div class="column" style="width:70%">
+        <h2>Horokos and Professor</h2>
+        <hr />
+        <p>Script and story by ComicTyrant and George Ive</p>
+        <p>Art by Demon-49</p>
+        <p>📚 You can read the comic on the <a href="Horokos and Professor.html" class="glow" target="_blank"><b>following link</b></a>.</p>
+        <hr />
+        <p><b>Episodes:</b>&nbsp;&nbsp;&nbsp; Three episodes (3 pdf files)</p>
+        <hr />
+        <p>📜 <a href="scenarios/horokos and professor/H&P 1.pdf#toolbar=0" class="glow"><b> Episode 1 - Under the full moon (12 pages)</b></a></p>
+        <p>📜 <a href="scenarios/horokos and professor/H&P 2.pdf#toolbar=0" class="glow"><b> Episode 2 - Into the Ghost Unit (19 pages)</b></a></p>
+        <p>📜 <a href="scenarios/horokos and professor/H&P 3.pdf#toolbar=0" class="glow"><b> Episode 3 - Magical love (15 pages)</b></a></p>
+      </div>
+    </div>
+    
+    <!-- The Modal/ Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 1</div>
+          <img src="images/h&p-group.jpg" style="width:80%">
+        </div>
+      
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
+      
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
 
-      <div class="column"></div>
-    </div>  
+    </script>
   </body>
-
+    
   <div id="footer">
-	  <hr />
+    <hr />
     <p>ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
   </div>
-
 </html>
