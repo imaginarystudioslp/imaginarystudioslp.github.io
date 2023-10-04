@@ -68,7 +68,7 @@
 
     .close:hover,
     .close:focus {
-      color: red;
+      color: rgb(83, 126, 236);
       text-decoration: none;
       cursor: pointer;
     }
@@ -91,7 +91,7 @@
       padding: 16px;
       margin-top: -50px;
       color: black;
-      font-weight: bold;
+      font-weight: normal;
       font-size: 20px;
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
@@ -115,7 +115,7 @@
     .numbertext {
       color: black;
       font-size: 15px;
-      font-weight: bold;
+      font-weight: normal;
       padding: 8px 12px;
       position: absolute;
       top: 0;
@@ -150,44 +150,39 @@
     }
 
     .hover-shadow:hover {
-      box-shadow: 0 0 16px rgb(204, 0, 0);
+      box-shadow: 0px 10px 20px rgb(83, 126, 236);
     }
 
+    /* Footer */
     #footer {
       position: fixed;
       bottom: 0px;
       width: 100%;
     }
   </style>
-
   <head>
-    <link rel="shortcut icon" href="workbench studio/work.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="assets/css/basic-white.css">
-    <title>William &#x2022; Imaginary Studios Workbench</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚗</text></svg>">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-work.css">
+    <title>William &#x2022; Imaginary Studios Experimental</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
-
   <header>
     <div id="topnav">
-      <a href="supremes-mockups.html"><strong>Back</strong></a>
-
+      <a href="supremes.html">Back</a>
       <div class="container">
-        <p><b>Note:</b> This is a test page for experimental scenarios.</p>
+        <p>⚠ Experimental ⚠</p>
       </div>
     </div>
   </header>
-
   <hr />
-
   <body>
     <!-- Image used to open the lightbox -->
     <div class="row">
       <div class="column" style="width:30%">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> Image gallery</b></p>
-        <p style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> Click on the image to enter the gallery view</i></p>
-        <img src="workbench studio/william.jpg" style="width: 60%; border: 1px solid black;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Image gallery </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➛ Click on the image to enter the gallery view</p>
+        <img src="experimental/william.jpg" style="width: 60%; border: 1px solid black;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
-      
       <div class="column" style="width:70%">
         <h2>William</h2>
         <hr />
@@ -204,28 +199,23 @@
         <p>Has a circle on his chest, that can release a large amount of energy.</p>
       </div>
     </div>
-    
     <!-- The Modal/ Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
-    
         <div class="mySlides">
           <div class="numbertext">1 / 1</div>
-          <img src="workbench studio/william.jpg" style="width:80%">
+          <img src="experimental/william.jpg" style="width:80%">
         </div>
-      
         <!-- Next/previous controls -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
         <!-- Caption text -->
         <div class="caption-container">
           <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
         </div>
       </div>
     </div>
-    
     <script>
       function openModal() {
         document.getElementById('myModal').style.display = "block";
@@ -254,19 +244,17 @@
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
     </script>
   </body>
-    
   <div id="footer">
     <hr />
     <p>ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
