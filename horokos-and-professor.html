@@ -5,43 +5,35 @@
       font-family: "Raleway", Arial, Helvetica, sans-serif;
       background-color: white;
     }
-
     * {
       box-sizing: border-box;
     }
-
     .row > .column {
       padding: 10px 10px;
     }
-
     .row:after {
       content: "";
       display: table;
       clear: both;
     }
-
     .column {
       float: left;
       width: 25%;
     }
-
     .container {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
     }
-
     /* Glowing Links */
     a.glow {
 	    text-decoration: none;
 	    color: rgb(51, 51, 51);
     }
-
     a.glow:hover {
       text-decoration: none;
       color: rgb(83, 126, 236);
     }
-
     /* The Modal (background) */
     .modal {
       display: none;
@@ -55,7 +47,6 @@
       overflow: auto;
       background-color: black;
     }
-
     /* Modal Content */
     .modal-content {
       position: relative;
@@ -65,7 +56,6 @@
       width: 90%;
       max-width: 1200px;
     }
-
     /* The Close Button */
     .close {
       color: white;
@@ -75,22 +65,18 @@
       font-size: 70px;
       font-weight: bold;
     }
-
     .close:hover,
     .close:focus {
       color: rgb(83, 126, 236);
       text-decoration: none;
       cursor: pointer;
     }
-
     .mySlides {
       display: none;
     }
-
     .cursor {
       cursor: pointer;
     }
-
     /* Next & previous buttons */
     .prev,
     .next {
@@ -108,19 +94,16 @@
       user-select: none;
       -webkit-user-select: none;
     }
-
     /* Position the "next button" to the right */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
     .next:hover {
       background-color: rgb(166, 166, 166);
     }
-
     /* Number text (1/3 etc) */
     .numbertext {
       color: black;
@@ -130,7 +113,6 @@
       position: absolute;
       top: 0;
     }
-
     /* Image Properties */
     img {
       display: block;
@@ -138,31 +120,25 @@
       margin-left: auto;
       margin-right: auto;
     }
-
     .caption-container {
       text-align: center;
       background-color: black;
       padding: 2px 16px;
       color: white;
     }
-
     .demo {
       opacity: 0.6;
     }
-
     .active,
     .demo:hover {
       opacity: 1;
     }
-
     img.hover-shadow {
       transition: 1.3s;
     }
-
     .hover-shadow:hover {
       box-shadow: 0 0 16px rgb(83, 126, 236);
     }
-
     /* Footer */
     #footer {
       position: fixed;
@@ -190,7 +166,7 @@
     <div class="row">
       <div class="column" style="width:30%">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Image gallery</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➛ Click on the image to enter the gallery view</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>🖯</b> Click on the image to enter the gallery view</p>
         <img src="experimental/gallery.png" style="width: 30%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
       <div class="column" style="width:70%">
@@ -198,57 +174,47 @@
         <hr />
         <p>Script and story by: ComicTyrant and George Ive</p>
         <p>Art by: Demon-49</p>
-        <p><a href="Horokos and Professor.html" class="glow" target="_blank">🕮 Read full comic here ↗</a></p>
+        <p><a href="Horokos and Professor.html" class="glow" target="_blank"><b>🕮</b> Read full comic here 🡥</a></p>
         <hr />
         <p><b>Episodes:</b>&nbsp;&nbsp;&nbsp; 3 episodes (3 pdf files)</p>
         <hr />
-        <p><a href="scenarios/horokos and professor/H&P 1.pdf#toolbar=0" class="glow">🗎 Episode 1 - Under the full moon (12 pages)</a></p>
-        <p><a href="scenarios/horokos and professor/H&P 2.pdf#toolbar=0" class="glow">🗎 Episode 2 - Into the Ghost Unit (19 pages)</a></p>
-        <p><a href="scenarios/horokos and professor/H&P 3.pdf#toolbar=0" class="glow">🗎 Episode 3 - Magical love (15 pages)</a></p>
+        <p><a href="scenarios/horokos and professor/H&P 1.pdf#toolbar=0" class="glow"><b>🗎</b> Episode 1 - Under the full moon (12 pages)</a></p>
+        <p><a href="scenarios/horokos and professor/H&P 2.pdf#toolbar=0" class="glow"><b>🗎</b> Episode 2 - Into the Ghost Unit (19 pages)</a></p>
+        <p><a href="scenarios/horokos and professor/H&P 3.pdf#toolbar=0" class="glow"><b>🗎</b> Episode 3 - Magical love (15 pages)</a></p>
       </div>
     </div>
-    
     <!-- The Modal/ Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
-    
         <div class="mySlides">
           <div class="numbertext">1 / 1</div>
           <img src="images/h&p-group.jpg" style="width:80%">
         </div>
-      
         <!-- Next/previous controls -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
         <!-- Caption text -->
         <div class="caption-container">
           <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
         </div>
       </div>
     </div>
-    
     <script>
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
-      
       function closeModal() {
         document.getElementById('myModal').style.display = "none";
       }
-      
       var slideIndex = 1;
       showSlides(slideIndex);
-      
       function plusSlides(n) {
         showSlides(slideIndex += n);
       }
-      
       function currentSlide(n) {
         showSlides(slideIndex = n);
       }
-      
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -266,10 +232,8 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
     </script>
   </body>
-    
   <div id="footer">
     <hr />
     <p>ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
