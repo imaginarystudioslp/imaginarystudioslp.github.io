@@ -5,24 +5,20 @@
       font-family: "Raleway", Arial, Helvetica, sans-serif;
       background-color: white;
     }
-
     /* Part of Footer for Modal Content */
     * {
       box-sizing: border-box;
     }
-
     .img-container {
       text-align: center;
       display: block;
     }
-
     .container {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       padding: 10px;
     }
-
     /* The Modal (background) */
     .modal {
       display: none;
@@ -36,7 +32,6 @@
       overflow: auto;
       background-color: black;
     }
-
     /* Modal Content */
     .modal-content {
       position: relative;
@@ -46,7 +41,6 @@
       width: 90%;
       max-width: 1200px;
     }
-
     /* The Close Button */
     .close {
       color: white;
@@ -56,22 +50,18 @@
       font-size: 70px;
       font-weight: bold;
     }
-
     .close:hover,
     .close:focus {
       color: rgb(83, 126, 236);
       text-decoration: none;
       cursor: pointer;
     }
-
     .mySlides {
       display: none;
     }
-
     .cursor {
       cursor: pointer;
     }
-
     /* Next & previous buttons */
     .prev,
     .next {
@@ -89,19 +79,16 @@
       user-select: none;
       -webkit-user-select: none;
     }
-
     /* Position the "next button" to the right */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
     .next:hover {
       background-color: rgb(166, 166, 166);
     }
-
     /* Number text (1/3 etc) */
     .numbertext {
       color: black;
@@ -111,16 +98,13 @@
       position: absolute;
       top: 0;
     }
-
     /* Image Properties */
     img {
       display: block;
       margin-bottom: 0px;
       margin-left: auto;
       margin-right: auto;
-      border-radius: 2.5%;
     }
-
     /* Footer for Modal Content */
     .caption-container {
       text-align: center;
@@ -128,179 +112,141 @@
       padding: 2px 16px;
       color: white;
     }
-
     .demo {
       opacity: 0.6;
     }
-
     .active,
     .demo:hover {
       opacity: 1;
     }
-
     img.hover-shadow {
       transition: 1.3s;
     }
-
     .hover-shadow:hover {
       box-shadow: 0 0 20px rgb(83, 126, 236);
     }
-
     /* Back button */
     a { 
       color: #383838;
       text-decoration: none;
       font-weight: normal;
     }
-
     a:hover {
       color: rgb(83, 126, 236);
     }
-
   </style>
-
   <head>
 	  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚗</text></svg>">
 	  <link rel="stylesheet" type="text/css" href="assets/css/basic-work.css">
 	  <title>[SER] Botari Film - Sakupljanje poena</title>
 	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
-
   <body>
     <!-- Navigation bar -->
     <div class="container">
       &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="javascript:history.back()">Back</a></p>
     </div>
-
 	  <!-- Image used to open the lightbox -->
     <span class="img-container">
       <img src="experimental/script.png" title="Botari Film - Sakupljanje poena (17 strana)" style="width: 20%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     </span> 
-
     <!-- The Modal/ Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
-
-          <div class="mySlides">
-            <div class="numbertext">1 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova01.jpg" style="width:80%">
-          </div>
-  
-          <div class="mySlides">
-            <div class="numbertext">2 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova02.jpg" style="width:80%">
-          </div>
-  
-          <div class="mySlides">
-            <div class="numbertext">3 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova03.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">4 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova04.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">5 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova05.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">6 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova06.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">7 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova07.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">8 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova08.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">9 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova09.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">10 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova10.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">11 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova11.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">12 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova12.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">13 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova13.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">14 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova14.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">15 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova15.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">16 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova16.jpg" style="width:80%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">17 / 17</div>
-            <img src="scenarios/skupljanje bodova/skupljanje-bodova17.jpg" style="width:80%">
-          </div>
-      
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-          <!-- Caption text -->
-          <div class="caption-container">
-            <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
-          </div>
-
+        <div class="mySlides">
+          <div class="numbertext">1 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova01.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova02.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova03.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova04.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova05.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova06.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova07.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">8 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova08.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">9 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova09.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">10 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova10.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">11 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova11.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">12 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova12.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">13 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova13.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">14 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova14.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">15 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova15.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">16 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova16.jpg" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">17 / 17</div>
+          <img src="scenarios/skupljanje bodova/skupljanje-bodova17.jpg" style="width:80%">
+        </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+        </div>
       </div>
     </div>
-  
     <script>
       document.write('<a href="' + document.referrer + '"></a>');
-      
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
-  
       function closeModal() {
         document.getElementById('myModal').style.display = "none";
       }
-  
       var slideIndex = 1;
       showSlides(slideIndex);
-  
       function plusSlides(n) {
         showSlides(slideIndex += n);
       }
-  
       function currentSlide(n) {
         showSlides(slideIndex = n);
       }
-  
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -318,8 +264,6 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
     </script>
-
   </body>
 </html>
