@@ -1,194 +1,28 @@
 <!-- Basic white theme by ImaginaryStudiosLP team -->
+<!-- Experimental page (for internal use only) -->
 <html>
-  <style>
-    body {
-      font-family: "Raleway", Arial, Helvetica, sans-serif;
-      background-color: white;
-    }
-
-    /* Part of Footer for Modal Content */
-    * {
-      box-sizing: border-box;
-    }
-
-    .row > .column {
-      padding: 10px 10px;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .column {
-      float: left;
-      width: 25%;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
-    /* The Modal (background) */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 100px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: black;
-    }
-
-    /* Modal Content */
-    .modal-content {
-      position: relative;
-      background-color: #ebe8e8;
-      margin: auto;
-      padding: 0;
-      width: 90%;
-      max-width: 1200px;
-    }
-
-    /* The Close Button */
-    .close {
-      color: white;
-      position: absolute;
-      top: 10px;
-      right: 25px;
-      font-size: 70px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: rgb(83, 126, 236);
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .mySlides {
-      display: none;
-    }
-
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: black;
-      font-weight: normal;
-      font-size: 20px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgb(166, 166, 166);
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: black;
-      font-size: 15px;
-      font-weight: normal;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    /* Image Properties */
-    img {
-      display: block;
-      margin-bottom: 0px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .caption-container {
-      text-align: center;
-      background-color: black;
-      padding: 2px 16px;
-      color: white;
-    }
-
-    .demo {
-      opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-      opacity: 1;
-    }
-
-    img.hover-shadow {
-      transition: 1.3s;
-    }
-
-    .hover-shadow:hover {
-      box-shadow: 0px 10px 20px rgb(83, 126, 236);
-    }
-
-    /* Footer */
-    #footer {
-      position: fixed;
-      bottom: 0px;
-      width: 100%;
-    }  
-  </style>
-
   <head>
-	  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚗</text></svg>">
+    <link rel="shortcut icon" href="experimental/icons/favicon.ico" type="image/x-icon">
 	  <link rel="stylesheet" type="text/css" href="assets/css/basic-work.css">
 	  <title>Gertude &#x2022; Imaginary Studios Experimental</title>
 	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
-
   <header>
-    <div id="topnav">
-      <a href="supremes.html">Back</a>
-
-      <div class="container">
-        <p>⚠ Experimental ⚠</p>
-      </div>
-	  </div>
+    <table style="width: 100%;"><tr>
+      <td style="width: 95%;"><a href="supremes.html" class="glow">Back</a></td>
+      <td style="width: 5%;"><img src="experimental/icons/alembic-32.png" style="vertical-align: middle;"></td>
+    </tr></table>
   </header>
-
 	<hr />
-
   <body>
 	  <!-- Image used to open the lightbox -->
     <div class="row">
       <div class="column" style="width:30%">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Image gallery</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>🖯</b> Click on the image to enter the gallery view</p>
-        <img src="experimental/gertude.jpg" style="width: 60%; border: 1px solid black;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <img src="experimental/supremes/gertude.jpg" style="width: 60%; border: 1px solid black;" 
+        onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
-      
       <div class="column" style="width:70%">
         <h2>Gertude</h2>
         <hr />
@@ -204,49 +38,40 @@
         <p>She has long light gray hair and a red dress, which is torn below knees.</p>
       </div>
     </div>
-  
     <!-- The Modal/ Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
-  
         <div class="mySlides">
           <div class="numbertext">1 / 1</div>
-          <img src="experimental/gertude.jpg" style="width:80%">
+          <img src="experimental/supremes/gertude.jpg" style="width:80%">
         </div>
-    
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-          <!-- Caption text -->
-          <div class="caption-container">
-            <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
-          </div>
-
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; &#x2022; 
+            &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.
+          </p>
+        </div>
       </div>
     </div>
-  
     <script>
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
-  
       function closeModal() {
         document.getElementById('myModal').style.display = "none";
       }
-  
       var slideIndex = 1;
       showSlides(slideIndex);
-  
       function plusSlides(n) {
         showSlides(slideIndex += n);
       }
-  
       function currentSlide(n) {
         showSlides(slideIndex = n);
       }
-  
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -255,21 +80,21 @@
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-      
     </script>
   </body>
-  
   <div id="footer">
 	  <hr />
-    <p>ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+    <p>ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; &#x2022; 
+      &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.
+    </p>
   </div>
 </html>

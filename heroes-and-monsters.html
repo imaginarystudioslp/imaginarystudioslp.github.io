@@ -1,82 +1,40 @@
 <!-- Basic white theme by ImaginaryStudiosLP team -->
+<!-- Experimental page (for internal use only) -->
 <html>
-  <style>
-    body {
-      font-family: "Raleway", Arial, Helvetica, sans-serif;
-      background-color: white;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
-    /* a Two Column Layout */
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 5px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Glowing Links */
-    a.glow {
-	    text-decoration: none;
-	    color: rgb(51, 51, 51);
-    }
-
-    a.glow:hover {
-      text-decoration: none;
-      color:rgb(83, 126, 236);
-    }
-
-    #footer {
-      position: fixed;
-      bottom: 0px;
-      width: 100%;
-    }
-  </style>
   <head>
-	  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚗</text></svg>">
+	  <link rel="shortcut icon" href="experimental/icons/favicon.ico" type="image/x-icon">
 	  <link rel="stylesheet" type="text/css" href="assets/css/basic-work.css">
 	  <title>Heroes and Monsters &#x2022; Imaginary Studios Experimental</title>
 	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
   <header>
-    <div id="topnav">
-      <a href="svet-kamore.html">Back</a>
-		  <div class="container">
-			  <p>⚠ Experimental ⚠</p>
-		  </div>
-    </div>
+    <table style="width: 100%;"><tr>
+      <td style="width: 95%;"><a href="svet-kamore.html" class="glow">Back</a></td>
+      <td style="width: 5%;"><img src="experimental/icons/alembic-32.png" style="vertical-align: middle;"></td>
+    </tr></table>
   </header>
 	<hr />
   <body>
-    <p>&nbsp;&nbsp;&nbsp; Heroes and Monsters &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scenarista: Lazar P. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Koscenaristi: Nemanja K. i Nemanja N.</p>
+    <p>&nbsp;&nbsp;&nbsp; Heroes and Monsters &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      Scenarista: Lazar P. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Koscenaristi: Nemanja K. i Nemanja N.
+    </p>
     <hr />
-    <div class="row">
-      <div class="column">
-        <p>&nbsp;&nbsp;&nbsp; 2 epizode (2 pdf fajla):</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="scenarios/heroes and monsters/Heroes-and-Monsters-ep1.pdf#toolbar=0" class="glow"><b>🗎</b> Epizoda 1 - Srce Emeraldnog zmaja (1. deo, 17 strana)</a></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="scenarios/heroes and monsters/Heroes-and-Monsters-ep2.pdf#toolbar=0" class="glow"><b>🗎</b> Epizoda 2 - Srce Emeraldnog zmaja (2. deo, 17 strana)</a></p>
-      </div>
-      <div class="column"></div>
-    </div>  
+    <table style="width: 100%;"><tr>
+      <p>&nbsp;&nbsp;&nbsp; 2 epizode (2 pdf fajla):</p>
+      <td>
+        <p>&nbsp;&nbsp;<a href="scenarios/heroes and monsters/Heroes-and-Monsters-ep1.pdf#toolbar=0" class="glow">
+          <b>🗎</b> Epizoda 1 - Srce Emeraldnog zmaja (1. deo, 17 strana)</a>
+        </p>
+        <p>&nbsp;&nbsp;<a href="scenarios/heroes and monsters/Heroes-and-Monsters-ep2.pdf#toolbar=0" class="glow">
+          <b>🗎</b> Epizoda 2 - Srce Emeraldnog zmaja (2. deo, 17 strana)</a>
+        </p>
+      </td>
+    </tr></table>    
   </body>
   <div id="footer">
 	  <hr />
-    <p>ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+    <p>ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; 
+      &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.
+    </p>
   </div>
 </html>
