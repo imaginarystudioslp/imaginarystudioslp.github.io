@@ -1,8 +1,19 @@
+/* Basic dark theme by ImaginaryStudiosLP team */
+/* Body */
 body {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
 	background-color: #151515;
+	color: #f4f4f6;
+    text-align: justify;
 }
-
+/* Horizontal dotted line */
+hr {
+	border: none;
+	border-top: 1px dotted #f0f0f0;
+	height: 1px;
+	width: 100%;
+}
+/* Navigation bar with links */
 #topnav {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
 	margin-bottom: 0px;
@@ -10,27 +21,192 @@ body {
 	border: 1px solid #151515;
 	background-color: #151515;
 }
-
+/* Font color for links within navigation bar */
 #topnav a {
-	color: #898ed2;
+	color: #b6b6b8;
 	text-decoration: none;
 }
-
+/* Hover effects for navigation bar links */
 #topnav a:hover {
-	color: #212a91;
+	color: #537eec;
 }
-
+/* Central banner image on homepage */
+.banner {
+	position: relative;
+	text-align: center;
+	color: white;
+	opacity: 0.9;  /* transparency of banner image */
+}
+/* Central position for text over banner image */
+.greetings {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* Glowing Links */
+a.glow {
+	text-decoration: none;
+	color:#b6b6b8;
+}
+a.glow:hover {
+  text-decoration: none;
+  color:#537eec;
+}
+/* Invisible Links */
+.invisible {
+  text-decoration: none;
+  color:#151515;
+}
+/* Glowing Image */
+.demo {
+	opacity: 0.6;
+}
+.active,
+.demo:hover {
+	opacity: 1;
+}
+img.hover-shadow {
+	transition: 0.6s;
+}
+.hover-shadow:hover {
+	box-shadow: 0 0 16px #537eec;
+}
+/* Wrap (?) */
 #wrap {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
 	padding: 10px;
 	margin-bottom: 15px;
 	border-radius: 5px 5px 5px 5px;
 	border: 1px solid #696969;
-	background-color: rgb(250, 250, 250);
+	background-color: #fafafa;
 }
-
+/* Table Properties */
+table, th, td {
+	table-layout: fixed;
+	border: 1px solid #151515;  /* #151515 is default value */
+	text-align: justify;
+}
+/* Table header */
+th {
+	padding: 20px;
+}
+/* Table data */
+td {
+	padding: 20px;
+}
+/* Part of Footer for Modal Content */
+* {
+	box-sizing: border-box;
+}
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #000;
+}
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #151515;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+/* The Close Button */
+.close {
+	color: #fafafa;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 70px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: #537eec;
+	text-decoration: none;
+	cursor: pointer;
+}
+.mySlides {
+	display: none;
+}
+.cursor {
+	cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: #b6b6b8;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: #537eec;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #b6b6b8;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+/* Footer for Modal Content */
+.caption-container {
+	text-align: center;
+	background-color: #000;
+	padding: 2px 16px;
+	color: #b6b6b8;
+}
+.demo {
+	opacity: 0.6;
+}
+.active,
+.demo:hover {
+	opacity: 1;
+}
+img.hover-shadow {
+	transition: 1.3s;
+}
+.hover-shadow:hover {
+	box-shadow: 0 0 16px #537eec;
+}
+/* Adjust image size based on the font size (for emojis) */
+.scale {
+	height: 1em;
+	width: 1em;
+}
+/* Footer */
 #footer {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	position: inherit;
+	width: 100%;
 	margin-bottom: 0px;
 	border-radius: 0px 0px 0px 0px;
 	border: 1px solid #151515;

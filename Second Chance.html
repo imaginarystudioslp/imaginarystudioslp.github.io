@@ -1,187 +1,12 @@
 <!-- Basic dark theme by ImaginaryStudiosLP team -->
-<!DOCTYPE html>
-<html lang="en">
-  <style>
-    body {
-      font-family: "Raleway", Arial, Helvetica, sans-serif;
-      background-color: #151515;
-      color: #f4f4f6;
-      text-align: justify;
-    }
-
-    /* Part of Footer for Modal Content */
-    * {
-      box-sizing: border-box;
-    }
-
-    /* The Modal (background) */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 100px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: black;
-    }
-
-    /* Modal Content */
-    .modal-content {
-      position: relative;
-      background-color: #151515;
-      margin: auto;
-      padding: 0;
-      width: 90%;
-      max-width: 1200px;
-    }
-
-    /* The Close Button */
-    .close {
-      color: #fafafa;
-      position: absolute;
-      top: 10px;
-      right: 25px;
-      font-size: 70px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #212a91;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .mySlides {
-      display: none;
-    }
-
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: #b6b6b8;
-      font-weight: bold;
-      font-size: 20px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: #212a91;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #b6b6b8;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    
-    /* Image Properties */
-    img {
-      display: block;
-      margin-bottom: 0px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Footer for Modal Content */
-    .caption-container {
-      text-align: center;
-      background-color: black;
-      padding: 2px 16px;
-      color: #b6b6b8;
-    }
-
-    .demo {
-      opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-      opacity: 1;
-    }
-
-    img.hover-shadow {
-      transition: 1.3s;
-    }
-
-    .hover-shadow:hover {
-      box-shadow: 0 0 16px #212a91;
-    }
-
-    /* Glowing Links */
-    a.glow {
-	    text-decoration: none;
-	    color: #898ed2;
-    }
-
-    a.glow:hover {
-      text-decoration: none;
-      color: #212a91;
-    }
-
-    /* Invisible Links */
-    .invisible {
-      text-decoration: none;
-      color:#151515;
-    }
-
-    /* Table Properties */
-    table, th, td {
-      border: 1px solid #151515;
-      text-align: justify;
-    }
-    
-    th {
-      padding: 20px;
-    }
-
-    td {
-      padding: 20px;
-      vertical-align: top;
-    }
-    
-    /* Footer */
-    #footer {
-      position: inherit;
-      bottom: 0px;
-      width: 100%;
-    }
-  </style>
-
+<html>
   <head>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
     <title>Second Chance! &#x2022; Imaginary Studios</title>
+    <meta name="description" content="Imaginary Studios represents a team of people who love to write interesting stories, draw comics and have fun.">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
   </head>
-
   <header>
     <div id="topnav">
       <table style="width: 100%;">
@@ -202,90 +27,98 @@
   </header>
 	<hr />
   <body>
+    <br></br>
     <table style="width: 100%;">
       <tr>
-        <td style="width: 30%;">
+        <td style="width: 30%; vertical-align: top;">
           <p><b>Cover pages</b>&nbsp;&nbsp;&nbsp;<a href="easter-egg.html" style="text-decoration: none;"><span class="invisible">hairball</span></a></p>
           <!-- Image used to open the lightbox -->
           <p style="color: #b6b6b8;"><i>Click on the image to enter the gallery view</i></p>
-          <p><img src="images/chance-cover.png" style="width: 220px; height: 300px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></p>
+          <p style="text-align: center;">
+            <img src="images/chance-cover.png" style="width: 220px; height: 300px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </p>
         </td>
         <td style="width: 70%;">
           <p style="color: #fafafa;"><b>Second Chance!</b></p>
+          <hr />
           <p style="color: #b6b6b8;">🗯️ Comic book series</p>
+          <br></br>
+          <p style="color: #fafafa;"><b>Properties:</b></p>
           <hr />
-          <p style="color: #b6b6b8;"><b>Genre(s):</b> Action, Adventure</p>
-          <p style="color: #b6b6b8;"><b>Writer(s):</b> Deathwave</p>
-          <p style="color: #b6b6b8;"><b>Artist(s):</b> Deathwave</p>
-          <p style="color: #b6b6b8;"><b>Publisher:</b> Imaginary Studios</p>
-          <p style="color: #b6b6b8;"><b>Date of publication:</b> April 18, 2022</p>
-          <hr />
+          <p style="color: #b6b6b8;"><b>&#x2022; Genre(s):</b> Action, Adventure</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Writer(s):</b> Deathwave</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Artist(s):</b> Deathwave</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Publisher:</b> Imaginary Studios</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Date of publication:</b> April 18, 2022</p>
+          <br></br>
           <p><b>Summary:</b></p>
-          <p style="color: #b6b6b8;">&#x2022; <b>Chapter 1:</b> A group of friends die and struggle to find a way to correct their life ruining mistakes by fighting demons of the past and trying to clense their lives.</p>
-          <p style="color: #b6b6b8;">&#x2022; <b>Chapter 2:</b> Sho Ayanami gets dragged into the world of a mystical enemy unknown identity. From there he is guided by her blindly. After short time he confronts Hotaru Kazuki in a blazing fight wich will determine his fate.</p>
           <hr />
-          <p style="color: #b6b6b8;">You can visit the following links to support creator:</p>
-          <p><a href="https://www.facebook.com/bruno.purgar" class="glow">♾️ Deathwave on Facebook</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.instagram.com/bruno_bucciarati97" class="glow">🖼️ Deathwave on Instagram</a></p>
-          <hr />
-          <p style="color: #b6b6b8;">💬 You can send all comments and suggestions to the following <a href = "mailto: imaginarystudioslp@gmail.com" class="glow">email address</a>.</p>
-          <hr />
+          <p style="color: #b6b6b8;">&#x2022; <b>Chapter 1:</b> 
+            A group of friends die and struggle to find a way to correct their life ruining mistakes by fighting demons of the past and trying to clense their lives.
+          </p>
+          <p style="color: #b6b6b8;">&#x2022; <b>Chapter 2:</b> 
+            Sho Ayanami gets dragged into the world of a mystical enemy unknown identity. From there he is guided by her blindly. 
+            After short time he confronts Hotaru Kazuki in a blazing fight wich will determine his fate.
+          </p>
+          <br></br>
           <p><b>Table of issues:</b></p>
+          <hr />
           <p style="color: #b6b6b8;">&#x2022;<a href="Second Chance 1.html" class="glow"> Second chance! Chapter 1: Haunting of a decade</a></p>
           <p style="color: #b6b6b8;">&#x2022;<a href="Second Chance 2.html" class="glow"> Second chance! Chapter 2: Roar of a death god</a></p>
-          <hr />
-          <p style="color: #b6b6b8;"><b>⚠️ Note:</b> To read click on these links, and then to access the reading mode just click on the cover image.</p>
+          <br></br>
+          <p style="text-align: center;">
+            <a href="mailto: imaginarystudioslp@gmail.com" style="font-size: larger;" class="glow" title="Send comments and suggestions">
+            <img src="assets/images/comment.png" class="scale"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.facebook.com/bruno.purgar" style="font-size: larger;" title="Support Deathwave on Facebook" class="glow">
+            <img src="assets/social/facebook.svg" class="scale"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/bruno_bucciarati97" style="font-size: larger;" class="glow" title="Support Deathwave on Instagram">
+            <img src="assets/social/instagram.svg" class="scale"></a>
+          </p>
         </td>
       </tr>
     </table>
-    <hr />
-    
+    <br></br>
     <!-- The Modal/ Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
-        <div class="mySlides">
+        <div class="mySlides" style="text-align: center;">
           <div class="numbertext">1 / 2</div>
           <img src="second chance 1/0sc1.png" style="width:80%" title="Front cover for Chapter 1">
         </div>
-
-        <div class="mySlides">
+        <div class="mySlides" style="text-align: center;">
           <div class="numbertext">2 / 2</div>
           <img src="second chance 2/0sc2.png" style="width:80%" title="Front cover for Chapter 2">
         </div>
-    
         <!-- Next/previous controls -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
         <!-- Caption text -->
         <div class="caption-container">
-          <p id="caption">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p>
+          <p id="caption">ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; 
+            All pictures, logos and stories are the property of the Imaginary Studios team members.
+          </p>
         </div>
       </div>
     </div>
-
     <script>
       document.write('<a href="' + document.referrer + '"></a>');
-
       function openModal() {
         document.getElementById('myModal').style.display = "block";
       }
-      
       function closeModal() {
         document.getElementById('myModal').style.display = "none";
       }
-      
       var slideIndex = 1;
       showSlides(slideIndex);
-      
       function plusSlides(n) {
         showSlides(slideIndex += n);
       }
-      
       function currentSlide(n) {
         showSlides(slideIndex = n);
       }
-      
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -303,18 +136,24 @@
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
     </script>
   </body>
-  
   <div id="footer">
+    <hr />
     <table style="width: 100%;">
       <tr><td><p style="text-align: center;">
-        <a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" class="glow">&nbsp;⏯️ YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <a href="https://www.deviantart.com/imaginarystudioslp" class="glow">&nbsp;🎨 DevianArt</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <a href="https://twitter.com/imaginaryteam_" class="glow">&nbsp;🐦 Twitter</a>
+        <a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" title="YouTube" style="font-size: larger;">
+        <img src="assets/social/youtube.svg" class="scale"></a> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://www.deviantart.com/imaginarystudioslp" title="DevianArt" style="font-size: larger;">
+        <img src="assets/social/deviantart.svg" class="scale"></a> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://twitter.com/imaginaryteam_" title="Twitter" style="font-size: larger;">
+        <img src="assets/social/twitter.svg" class="scale"></a>
       </p></td></tr>
-      <tr><td><p style="text-align: center; color: #b6b6b8;">ImaginaryStudiosLP &#169; 2023 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.</p></td></tr>
+      <tr><td><p style="text-align: center; color:#b6b6b8;">ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; 
+        &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.
+      </p></td></tr>
     </table>
   </div>
 </html>
