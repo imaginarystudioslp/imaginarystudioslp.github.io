@@ -1,0 +1,150 @@
+<!-- Basic dark theme by ImaginaryStudiosLP team -->
+<html>
+  <head>
+	  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	  <link rel="stylesheet" type="text/css" href="assets/css/basic-reading.css">
+	  <title>Horokos and Professor S3</title>
+    <meta name="description" content="Imaginary Studios represents a team of people who love to write interesting stories, draw comics and have fun.">
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="container">
+      &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-align: left;"><a href="javascript:history.back()">Back</a></p>
+    </div>  
+	  <!-- Image used to open the lightbox -->
+    <span class="img-container">
+      <img src="images/symbolic/script-dark.png" style="width: 20%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </span> 
+    <!-- The Modal/ Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 15</div>
+          <img src="horokos and professor s3/H&PS3-0001.jpg" style="width:80%">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">2 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0002.jpg" style="width:80%">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">3 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0003.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0004.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">5 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0005.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">6 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0006.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">7 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0007.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">8 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0008.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">9 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0009.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">10 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0010.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">11 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0011.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">12 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0012.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">13 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0013.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">14 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0014.jpg" style="width:80%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">15 / 15</div>
+            <img src="horokos and professor s3/H&PS3-0015.jpg" style="width:80%">
+          </div>
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption">ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; 
+              All pictures, logos and stories are the property of the Imaginary Studios team members.
+            </p>
+          </div>
+      </div>
+    </div>
+    <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
+  
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+  
+      var slideIndex = 1;
+      showSlides(slideIndex);
+  
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+  
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+  
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
+  </body>
+</html>
