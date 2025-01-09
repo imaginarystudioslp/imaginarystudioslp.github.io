@@ -1,0 +1,157 @@
+<!-- Basic dark theme by ImaginaryStudiosLP team -->
+<html>
+  <head>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/basic-dark.css">
+    <title>Imaginaryverse VS Crimzonverse &#x2022; Imaginary Studios</title>
+    <meta name="description" content="Imaginary Studios represents a team of people who love to write interesting stories, draw comics and have fun.">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+  </head>
+  <header>
+    <div id="topnav">
+      <table style="width: 100%;">
+        <tr>
+          <td style="width: 20%;"><p style="text-align: left;"><a href="javascript:history.back()">Back</a></p></td>
+          <td style="width: 80%;"><p style="text-align: right;">
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="news.html">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="archives.html">Archives</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="characters.html">Characters</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contributors.html">Contributors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">About</a>
+          </p></td>
+        </tr>
+      </table>
+    </div>
+  </header>
+	<hr />
+  <body>
+    <br></br>
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 30%; vertical-align: top;">
+          <p><b>Image gallery</b></p>
+          <!-- Image used to open the lightbox -->
+          <p style="color: #b6b6b8; text-align: left;"><i>Click on the icon to enter the gallery view</i></p>
+          <p style="text-align: center;"><img src="images/gallery-dark.png" style="width: 30%; border-radius: 10%;" onclick="openModal();currentSlide(1)" 
+          class="hover-shadow cursor"></p>
+        </td>
+        <td style="width: 70%;">
+          <p style="color: #fafafa;"><b>Imaginaryverse VS Crimzonverse - Clash of Worlds</b></p>
+          <hr />
+          <p style="color: #b6b6b8;">🛸 Crossover</p>
+          <br></br>
+          <p style="color: #fafafa;"><b>Properties:</b></p>
+          <hr />
+          <p style="color: #b6b6b8;"><b>&#x2022; Genre(s):</b> Science Fiction</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Writer(s):</b> Lazar P. (Comic Tyrant), V13, David Braga</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Artist(s):</b> David Braga, V13</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Publisher:</b> Imaginary Studios</p>
+          <p style="color: #b6b6b8;"><b>&#x2022; Date of publication:</b> January 9, 2025</p>
+          <br></br>
+          <p><b>Summary:</b></p>
+          <hr />
+          <p style="color: #b6b6b8;">
+            Witness the great collision of two universes, an epic battle between the Imaginaryverse and the Crimzonverse!
+          </p>
+          <br></br>
+          <p><b>Table of Contents:</b></p>
+          <hr />
+          <p style="color: #b6b6b8;">&#x2022;<a href="scenarios/crossovers/Imaginaryverse_vs_Crimsonverse.pdf" class="glow"> Imaginaryverse VS Crimzonverse - Clash of Worlds (170 pages)</a></p>
+          <br></br>
+          <p style="text-align: center;">
+            <a href="mailto: imaginarystudioslp@gmail.com" style="font-size: larger;" class="glow" title="Send comments and suggestions">
+            <img src="assets/images/comment.png" class="scale"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.deviantart.com/comictyrant" style="font-size: larger;" class="glow" title="Support ComicTyrant on DeviantArt">
+            <img src="assets/social/deviantart.svg" class="scale"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/bigdave510/" style="font-size: larger;" class="glow" title="Support David Braga on Instagram">
+            <img src="assets/social/instagram.svg" class="scale"></a></p>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <br></br>
+    <!-- The Modal/ Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides" style="text-align: center;">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/ImaginaryverseVSCrimzonverse/Clash_of_Worlds.jpg" style="width:80%" title="Clash of Worlds by David Braga">
+        </div>
+        <div class="mySlides" style="text-align: center;">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/ImaginaryverseVSCrimzonverse/Huge_VS_Masaro.png" style="width:80%" title="Huge VS Masaro by V13">
+        </div>
+        <div class="mySlides" style="text-align: center;">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/ImaginaryverseVSCrimzonverse/Ultrius_Choicemaker_Commentary.jpg" style="width:80%" title="Ultrius & Choicemaker Commentary by David Braga">
+        </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">ImaginaryStudiosLP &#169; 2024 &nbsp;&nbsp;&nbsp; &#x2022; &nbsp;&nbsp;&nbsp; 
+            All pictures, logos and stories are the property of the Imaginary Studios team members.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.write('<a href="' + document.referrer + '"></a>');
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>  
+  </body>
+  <div id="footer">
+    <hr />
+    <table style="width: 100%;">
+      <tr><td><p style="text-align: center;">
+        <a href="https://www.youtube.com/channel/UCEmWZTgwhHZ7TzJsFV075fA" title="YouTube" style="font-size: larger;">
+        <img src="assets/social/youtube.svg" class="scale"></a> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://www.deviantart.com/imaginarystudioslp" title="DevianArt" style="font-size: larger;">
+        <img src="assets/social/deviantart.svg" class="scale"></a> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://twitter.com/imaginaryteam_" title="Twitter" style="font-size: larger;">
+        <img src="assets/social/twitter.svg" class="scale"></a>
+      </p></td></tr>
+      <tr><td><p style="text-align: center; color:#b6b6b8;">ImaginaryStudiosLP &#169; 2025 &nbsp;&nbsp;&nbsp; 
+        &#x2022; &nbsp;&nbsp;&nbsp; All pictures, logos and stories are the property of the Imaginary Studios team members.
+      </p></td></tr>
+    </table>
+  </div>
+</html>
